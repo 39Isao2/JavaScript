@@ -194,14 +194,10 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 
 ```
 <script>
-　　$(function(){
-  
-        // windowリサイズ時に発動し続ける
-        $(window).on('resize',function(){
-            $('.target').addClass('rotate');
-        });
-
-    });
+	// windowリサイズ時に発動し続ける
+	$(window).on('resize',function(){
+	    $('.target').addClass('rotate');
+	});
 </script>
 ```
 
@@ -212,23 +208,26 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 
 ```
 // cssアニメ定義
-
-
+.target{
+  /* transition:1s; */
+  opacity: 1;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+}
 ```
-
-参考: CSSのanimationでふわふわさせたりブルブルさせたりする<br>
-https://www.esz.co.jp/blog/101.html
 
 
 ```
 <script>
-　　$(function(){
-  
-        // ボタンクリックでaddClass
-        $("#btn").on('scroll',function(){
-          $('.target').fadeOut();
-        });
+    // windowリサイズ時に発動し続ける
+        $(window).on('scroll',function(){
+	  // let 変数名 = 登録
+	  let scrollVal = $(window).scrollTop();
+	  console.log(scrollVal);
 
+	  // 'で囲んだ部分は文字'
+	  $('.target').css('transform', 'rotateY('+ scrollVal +'deg)');
     });
 </script>
 ```
@@ -260,3 +259,5 @@ jQueryのありがたみを知りましょう！
 
 参考:css トランジションまとめ<br>
 https://qiita.com/7968/items/812d6a21fc4dd9ae9c75
+参考: CSSのanimationでふわふわさせたりブルブルさせたりする<br>
+https://www.esz.co.jp/blog/101.html
