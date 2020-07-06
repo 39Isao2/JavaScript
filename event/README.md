@@ -66,22 +66,23 @@ https://code.jquery.com/
 ```
 
 <script>
-    // 基本の書き方 
+    // htmlを読み込んだら
     $(document).ready(function(){
-        console.log('jQueryの基本');
+        // ここの処理が発動する
+        alert('html読み込み完了！');
     });
 </script>
 
 ```
 
-readyファンクションの簡略系
+readyファンクションの簡略系（こちらがメジャー）
 
 ```
 // ここにjQueryを書く
 <script>
     // 基本の書き方 
     $(function(){
-	console.log('jQueryの基本');
+	console.log('html読み込み完了！');
     });
 </script>
 ```
