@@ -37,9 +37,9 @@ https://www.ikuple.com/
 <br>
 <br>
 
-## jQueryで練習しよう！ (jsの仕組みを理解する)
+## jQueryで練習しよう！  (ピュアjsを書く前に、動きの仕組みを理解する)
 <img src="https://github.com/55Kaerukun/img/blob/master/jquery-1.jpg" width="200px"><br>
-jQueryとは、JavaScriptを簡易的に書けるようにしたライブラリ。<br>
+jQueryとは、JavaScriptを簡易的に書ける&ブラウザ間の挙動の差異を吸収してくれるライブラリ。<br>
 <br>
 コーポレートサイトやLP制作などによく使われます。js入門にも最適。<br>
 
