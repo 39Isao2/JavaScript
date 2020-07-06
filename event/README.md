@@ -91,7 +91,7 @@ readyファンクションの簡略系（こちらがメジャー）
 ## 実践！ HTMLを読み込んだら画像を表示！
 
 ```
-// cssアニメ定義
+// まずはcssアニメ定義
 .target{
   opacity: 0;
   transition:2s;
@@ -107,7 +107,7 @@ readyファンクションの簡略系（こちらがメジャー）
 ```
 
 // jQuery
-    $('.target').addClass('show');
+$('.target').addClass('show');
     
 ```
 
