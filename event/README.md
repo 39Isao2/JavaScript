@@ -221,7 +221,7 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 ```
 <script>
     // windowリサイズ時に発動し続ける
-        $(window).on('scroll',function(){
+    $(window).on('scroll',function(){
 	  // let 変数名 = 登録
 	  let scrollVal = $(window).scrollTop();
 	  console.log(scrollVal);
