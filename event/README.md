@@ -194,10 +194,10 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 
 ```
 <script>
-	// windowリサイズ時に発動し続ける
-	$(window).on('resize',function(){
-	    $('.target').addClass('rotate');
-	});
+　　// windowリサイズ時に発動し続ける
+　　　　$(window).on('resize',function(){
+	  $('.target').addClass('rotate');
+　　　　});
 </script>
 ```
 
