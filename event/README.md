@@ -161,9 +161,10 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 ```
 /* cssアニメ定義 */
 
+
 /* 2倍に拡大する命令 */
 .zoom{
-  transform:scale(2);
+  transform:scale(1.5);
 }
 
 ```
