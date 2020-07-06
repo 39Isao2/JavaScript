@@ -186,8 +186,9 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 ## resizeイベント
 ```
 // cssアニメ定義
-
-
+    .rotate{
+        transform: rotate(360deg);
+    }
 ```
 
 
@@ -195,9 +196,18 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 <script>
 　　$(function(){
   
-        // ボタンクリックでaddClass
-        $("#btn").on('resize',function(){
-          $('.target').fadeOut();
+        // windowリサイズ時に発動し続ける
+        $(window).on('resize',function(){
+
+          // ウインドウの横幅取得
+          let w = $(window).width();
+          console.log(w);
+
+          // if文
+          if(w < 768){
+            $('.target').addClass('rotate');
+          }
+
         });
 
     });
