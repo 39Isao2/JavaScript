@@ -37,7 +37,7 @@ https://www.ikuple.com/
 <br>
 <br>
 
-## jQueryで練習しよう！  (ピュアjsを書く前に、動きの仕組みを理解する)
+## jQueryで練習しよう！  (バニラjsを書く前に、動きの仕組みを理解する)
 <img src="https://github.com/55Kaerukun/img/blob/master/jquery-1.jpg" width="200px"><br>
 jQueryとは、JavaScriptを簡易的に書ける&ブラウザ間の挙動の差異を吸収してくれるライブラリ。<br>
 <br>
@@ -50,7 +50,10 @@ https://code.jquery.com/
 ```
 
 // まずは本体を読み込む
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
 
 ```
 
