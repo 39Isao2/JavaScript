@@ -89,13 +89,27 @@ readyファンクションの簡略系（こちらがメジャー）
 
 
 実践！ // 読み込んだらひよこを表示！
+
 ```
 // cssアニメ定義
+.target{
+  opacity: 0;
+  transition:2s;
+}
 
-
-
+.show{
+  opacity: 1;
+}
 ```
 
+
+**addClass() クラスを追加する命令（関数）
+```
+
+// jQuery
+    $('.target').addClass('show');
+    
+```
 
 
 <br>
