@@ -198,16 +198,7 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
   
         // windowリサイズ時に発動し続ける
         $(window).on('resize',function(){
-
-          // ウインドウの横幅取得
-          let w = $(window).width();
-          console.log(w);
-
-          // if文
-          if(w < 768){
             $('.target').addClass('rotate');
-          }
-
         });
 
     });
