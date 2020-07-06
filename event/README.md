@@ -21,7 +21,7 @@ alert関数（windowにポップアップを表示。）<br>
 ## JavaScriptとは
 1995年 NetScape社のブレダン・アイク氏が開発。（ポケモン赤、緑と同い年）<br><br>
 <img src="https://github.com/55Kaerukun/img/blob/master/fushigi.png" width="120px"><br><br>
-もともとは「Webページを動かす」ことを目的に作られたが、<br>
+**もともとは「Webページを動かす」ことを目的に作られたが、<br>
 今やスマホアプリ、デスクトップアプリ、サーバーとのデータやりとりなどできるマルチプレーヤー。<br>
 主にブラウザで動く。<br>
 
