@@ -30,7 +30,7 @@ alert関数（windowにポップアップを表示。）<br>
 webページ内でのアニメーションは<br>
 jsでイベント検知→CSSアニメーションが現在主流。<br>
 例: スクロールの値をjsで測って、cssアニメでふわっと表示。  
-例: https://www.ikuple.com/
+https://www.ikuple.com/
 
 
 <br>
