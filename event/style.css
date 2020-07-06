@@ -1,9 +1,10 @@
 body{
   padding: 20px;
   font-family:'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  height: 10000px;
 }
 .btn {
-  margin-bottom: 100px;
+  margin-top: 50px;
   display: inline-block;
   padding: 0.5em 1em;
   text-decoration: none;
@@ -13,20 +14,16 @@ body{
   border-radius: 3px;
   font-family: Montserrat;
 }
+.wrap{
+  width: 800px;
+  height: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
 .btn:active {
   /*ボタンを押したとき*/
   -webkit-transform: translateY(4px);
   transform: translateY(4px); /*下に動く*/
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2); /*影を小さく*/
   border-bottom: none;
-}
-.target{
-  transition: 1s;
-  opacity: 1;
-}
-.wrap{
-  text-align: center;
-}
-.fadeout{
-  opacity: 0;
 }
