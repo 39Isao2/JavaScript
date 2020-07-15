@@ -65,17 +65,19 @@ https://code.jquery.com/
 
 ```
 
-<script>
+<!--<script>
     // htmlを読み込んだら
     $(document).ready(function(){
         // ここの処理が発動する
         alert('html読み込み完了！');
     });
-</script>
+</script>-->
+
+// readyファンクションの簡略系（こちらがメジャー）
 
 ```
 
-readyファンクションの簡略系（こちらがメジャー）
+
 
 ```
 // ここにjQueryを書く
