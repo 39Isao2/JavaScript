@@ -13,8 +13,12 @@ https://projects.lukehaas.me/css-loaders/  <br>
 
 
 ## ローディングアニメーションのcssをコピペする
-注:colorを黒にしとく<br>
+
+<br>
 <img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/loding2.png" width="600px">
+<br>
+注:colorを黒にしとく<br>
+
 
 
 ```
