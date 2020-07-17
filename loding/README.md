@@ -4,18 +4,16 @@ webページが表示されるまでの待機時間用アニメーション。
 今は演出やブランディングなどにも使用されています。  
 <br>
 <br>
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/loding1.png" width="600px">
 
 
 ### cssアニメ、gifアニメ、svgアニメ、動画、色んな方法で制作されるが、、
-<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/loding1.png" width="600px">
-
 https://projects.lukehaas.me/css-loaders/
 今回はこの「 Single Element CSS Spinners 」を使って実装していきたいと思います。
 
 
 ## ローディングアニメーションのcssをコピペする
-注:colorを黒にしとく
-
+注:colorを黒にしとく<br>
 <img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/loding2.png" width="600px">
 
 
@@ -23,10 +21,6 @@ https://projects.lukehaas.me/css-loaders/
 .loader {
   /*color: #ffffff;*/
   color:#333;
-```
-
-
-
 
   font-size: 20px;
   margin: 100px auto;
@@ -107,6 +101,9 @@ https://projects.lukehaas.me/css-loaders/
 </div>
 ```
 
+
+cssでローディングアニメーションを上下左右中央配置に。
+
 ```
 .loader-wrap {
     position: fixed;
@@ -123,7 +120,6 @@ https://projects.lukehaas.me/css-loaders/
 ## もともとのページのコンテンツは非表示にしておく
 
 ```
-
 /* loading用 */
 .container{
   display: none;
