@@ -4,6 +4,8 @@
 <img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/qa.png" width="600px">
 <br>
 
+## jQueryのコード
+
 ```
     $('#accordion dt').on('click',function(){
         $(this).next('dd').slideToggle();
