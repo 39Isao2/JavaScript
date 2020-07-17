@@ -7,9 +7,9 @@
 ## jQueryのコード
 
 ```
-    $('#accordion dt').on('click',function(){
-        $(this).next('dd').slideToggle();
-    });
+$('#accordion dt').on('click',function(){
+    $(this).next('dd').slideToggle();
+});
 ```
 
 ## 解説
