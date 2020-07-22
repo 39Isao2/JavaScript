@@ -11,7 +11,8 @@ alert関数（windowにポップアップを表示。）<br>
     alert('こんにちはJavaScript');
 </script>
 
-// javaScriptはhtmlの中に記述する場合は  <script>タグから</script>  の中に記述します。
+// javaScriptはhtmlの中に記述する場合はスクリプトタグ内に記述します。
+<script>ここ</script>  
 ```
 
 <br>
