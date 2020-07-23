@@ -191,7 +191,7 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 
 ```
 <script>
-　　// windowリサイズ時に発動し続ける
+　　// windowリサイズ時に回転
 　　　　$(window).on('resize',function(){
 	  $('.target').addClass('rotate');
 　　　　});
