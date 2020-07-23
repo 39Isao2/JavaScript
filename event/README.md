@@ -202,16 +202,39 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 
 ## scrollイベント
 
-
 ```
 // cssアニメ定義
 .target{
-  /* transition:1s; */
+  transition:1s;
   position: fixed;
   bottom: 20px;
   right: 50px;
 }
 ```
+
+```
+.rotateY{
+    rotateY(360deg);
+}
+
+```
+
+
+```
+<script>
+    // windowリサイズ時に発動し続ける
+    $(window).on('scroll',function(){
+	  $('.target').addClass('rotateY');
+    });
+</script>
+```
+
+
+
+
+
+
+### スクロール値をcssに適用してみる。（少し難しいかも）
 
 
 ```
