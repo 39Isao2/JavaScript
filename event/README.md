@@ -238,7 +238,7 @@ jQueryのありがたみを知りましょう！
 
     /* バニラjs */
     document.addEventListener('DOMContentLoaded', (event) => {
-        document.querySelector('#btn').addEventListener('click', function(){
+        document.querySelector('#btn').addEventListener('click', (event) => {
  	    document.body.style.backgroundColor = "aqua";
         });
     });
@@ -247,15 +247,15 @@ jQueryのありがたみを知りましょう！
     
     /* jQuery */
     $(function(){
-	    $('#btn').on("click",function(){
-		$('body').css('background','aqua');
-	    });
+	$('#btn').on("click",function(){
+            $('body').css('background','aqua');
+	});
     });
     
  ```
 
 
 参考:css トランジションまとめ<br>
-https://qiita.com/7968/items/812d6a21fc4dd9ae9c75
+https://qiita.com/7968/items/812d6a21fc4dd9ae9c75 <br>
 参考: CSSのanimationでふわふわさせたりブルブルさせたりする<br>
 https://www.esz.co.jp/blog/101.html
