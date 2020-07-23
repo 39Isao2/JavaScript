@@ -92,7 +92,7 @@ https://code.jquery.com/
 ```
 
 
-**addClass() クラスを追加する命令（関数）
+addClass() クラスを追加する命令（関数）
 ```
 
 // jQuery
