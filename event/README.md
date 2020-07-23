@@ -207,7 +207,6 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 // cssアニメ定義
 .target{
   /* transition:1s; */
-  opacity: 1;
   position: fixed;
   bottom: 20px;
   right: 50px;
