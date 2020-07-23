@@ -203,7 +203,7 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 ## scrollイベント
 
 ```
-// cssアニメ定義
+/* cssアニメ定義 */
 .target{
   transition:1s;
   position: fixed;
