@@ -180,7 +180,7 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 // cssアニメ定義
 
 .target{
-    transition:2s;
+    transition:1s;
 }
 
 .rotate{
