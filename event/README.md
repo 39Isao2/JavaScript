@@ -210,9 +210,7 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
   bottom: 20px;
   right: 50px;
 }
-```
 
-```
 .rotateY{
     rotateY(360deg);
 }
