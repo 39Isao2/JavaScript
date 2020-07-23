@@ -233,17 +233,26 @@ jQueryのありがたみを知りましょう！
 
 
 ### onClick
+
+```
+
     /* バニラjs */
-    document.querySelector('#btn').addEventListener('click', function(){
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelector('#btn').addEventListener('click', function(){
  	    document.body.style.backgroundColor = "aqua";
+        });
     });
     
+
+    
     /* jQuery */
-    $('#btn').on("click",function(){
-        $('body').css('background','aqua');
+    $(function(){
+	    $('#btn').on("click",function(){
+		$('body').css('background','aqua');
+	    });
     });
-
-
+    
+ ```
 
 
 参考:css トランジションまとめ<br>
