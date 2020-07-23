@@ -150,6 +150,9 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 ```
 /* cssアニメ定義 */
 
+.target{
+    transition:2s;
+}
 
 /* 2倍に拡大する命令 */
 .zoom{
@@ -175,6 +178,11 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 ## resizeイベント
 ```
 // cssアニメ定義
+
+.target{
+    transition:2s;
+}
+
 .rotate{
     transform: rotate(360deg);
 }
