@@ -65,21 +65,6 @@ https://code.jquery.com/
 
 ## 初めてのjQueryを書いてみよう！
 
-```
-
-<!--<script>
-    // htmlを読み込んだら
-    $(document).ready(function(){
-        // ここの処理が発動する
-        alert('html読み込み完了！');
-    });
-</script>-->
-
-// readyファンクションの簡略系（こちらがメジャー）
-
-```
-
-
 
 ```
 // ここにjQueryを書く
