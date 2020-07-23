@@ -154,7 +154,7 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
     transition:2s;
 }
 
-/* 2倍に拡大する命令 */
+/* 拡大する命令 */
 .zoom{
   transform:scale(1.5);
 }
