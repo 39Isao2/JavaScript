@@ -212,7 +212,7 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 }
 
 .rotateY{
-    rotateY(360deg);
+    transform:rotateY(360deg);
 }
 
 ```
