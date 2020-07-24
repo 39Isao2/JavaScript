@@ -58,7 +58,7 @@ cssでローディングアニメーションを上下左右中央配置に。
 
 ```
 /* loading用 */
-.container{
+#container{
   display: none;
 }
 
