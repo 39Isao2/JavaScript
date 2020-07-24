@@ -1,7 +1,4 @@
 # スクロールアニメーション
-
-<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/scroll.png" width="600px">
-<br>
 JavaScriptでスクロール値を取得して、可視範囲に入ったらクラスを付けてcssアニメーションさせます。
 
 
@@ -69,6 +66,10 @@ $(window).on('scroll load', function (){
 
 ```
 
+図解してみる。<br>
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/scroll.png" width="600px">
+
+
 
 ## cssのtransition-delayでアレンジしてみよう！
 
@@ -93,10 +94,6 @@ $(window).on('scroll load', function (){
 
 トランジション効果が始まるまでの待ち時間を指定できる。
 （変化開始までの待ち時間）初期値は0s。
-
-1s が 1秒
-0.5s が 0.5秒
-300ms が 0.3秒
 
 
 .d1{
