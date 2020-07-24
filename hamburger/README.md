@@ -1,7 +1,6 @@
 # ハンバーガーメニュー
 スマホサイトでよく見かける、<br>
 通称(ハンバーガーメニュー)を作ってみましょう！<br><br>
-<img src="http://hareumi.com/dhjs/defolt.png" width="200px"><img src="http://hareumi.com/dhjs/active.png" width="200px">
 
 
 
@@ -12,8 +11,6 @@
 
 
 ## ボタン部分のHTML
-
-<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/hum1.png" width="400px">
 
 ```
 <!-- ボタン部分のHTML -->
@@ -26,7 +23,7 @@
 
 ## CSSでボタンの背景（枠）を制作
 
-<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/hum2.png" width="400px">
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/hum1.png" width="400px">
 
 
 ```
@@ -44,6 +41,8 @@
 
 
 ## 線を表示させる(3つ重なった状態)
+
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/hum2.png" width="400px">
 
 ```
 
