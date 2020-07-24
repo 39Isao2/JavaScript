@@ -8,8 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:700|Noto+Serif+TC:700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/humberger.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+    <script src="js/jquery.lettering.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <div id="container">
@@ -150,6 +155,12 @@
     </footer>
     </div><!-- /#container -->
 
+
+    <div class="loader-wrap">
+        <h1 class="text-anime">Summer is comming!!</h1>
+        <!-- <div class="loader">Loading...</div> -->
+    </div>
+
     <!-- <div class="loader-wrap">
         <div class="loader">
             <img src="images/loading.gif">
@@ -161,6 +172,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
+
         var swiper = new Swiper('.swiper-container', {
 
             navigation: {
@@ -176,6 +188,8 @@
             },
             speed: 1000, // スライドするスピード
             loop:true,
+            observer: true,
+            observeParents: true,
         });
 
 
@@ -184,7 +198,7 @@
         });
 
 
-        $(window).on('scroll load', function (){
+        $(window).on('scroll', function (){
 
             /* scroll-effectクラス全ての要素を見にいく */
             $('.scroll-effect').each(function(){
@@ -198,21 +212,38 @@
                 // ウインドウの高さを取得
                 let windowHeight = $(window).height();
 
-
                 if (scroll > targetPos - windowHeight){
                     $(this).addClass('scroll-in');
                 }
 
             });
+            
         });
 
 
+        $(function(){
+            $('.text-anime').textillate({
+                loop:true,  
+                minDisplayTime: 200,  
+                autoStart: true,  
+            
+                // アニメーション設定(開始)
+                in: {
+                    effect: 'bounceInDown'
+                },  
+                // アニメーション設定(終了)
+                out: {
+                    effect: 'bounceOut', 
+                }
+            });
+        });
+    
 
         //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
-        // setTimeout(function(){
-        //     $('.loader-wrap').fadeOut();
-        //     $('#container').fadeIn();
-        // },1000);
+        setTimeout(function(){
+            $('.loader-wrap').fadeOut();
+            $('#container').fadeIn(1500);
+        },4000);
 
 
     </script>
