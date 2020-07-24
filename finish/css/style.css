@@ -319,7 +319,6 @@ sp設定　768px以下の表示
   transition-delay:0.6s;
 }
 
-/* loding
 .loader {
   color: #333;
   font-size: 20px;
@@ -388,9 +387,7 @@ sp設定　768px以下の表示
   87.5% {
     box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
   }
-} */
-
-
+}
 
 .loader-wrap {
   position: fixed;
@@ -400,10 +397,18 @@ sp設定　768px以下の表示
   width: 100%;
   height: 100%;
   background: #fff;
+  /* background-color: rgba(0,0,0,0.7); */
 }
 
 
 /* loading用 */
-/* #container{
+#container{
   display: none;
-} */
+}
+
+
+h1.text-anime{
+  font-size: 60px;
+  color:#333;
+  font-family: 'Lexend Zetta', sans-serif;
+}
