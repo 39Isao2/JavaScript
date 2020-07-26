@@ -91,8 +91,12 @@ crossorigin="anonymous">
 addClass() クラスを追加する命令（関数）
 ```
 
-// jQuery
-$('.target').addClass('show');
+<script>
+    // 基本の書き方 
+    $(function(){
+	$('.target').addClass('show');
+    });
+</script>
     
 ```
 
