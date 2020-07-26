@@ -220,9 +220,9 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 
 ```
 <script>
-    // windowリサイズ時に発動し続ける
+    // windowリサイズ時に発動
     $(window).on('scroll',function(){
-	  $('.target').addClass('rotateY');
+        $('.target').addClass('rotateY');
     });
 </script>
 ```
