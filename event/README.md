@@ -51,7 +51,8 @@ https://code.jquery.com/
 
 ```
 
-// まずはcdnから本体を読み込む
+<!-- まずはcdnから本体を読み込む -->
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
 integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" 
 crossorigin="anonymous">
@@ -76,7 +77,7 @@ crossorigin="anonymous">
 ## 実践！ HTMLを読み込んだら画像を表示！
 
 ```
-// まずはcssアニメ定義
+/* まずはcssアニメ定義 */
 .target{
   opacity: 0;
   transition:2s;
@@ -92,7 +93,6 @@ addClass() クラスを追加する命令（関数）
 ```
 
 <script>
-    // 基本の書き方 
     $(function(){
 	$('.target').addClass('show');
     });
@@ -177,7 +177,7 @@ https://qiita.com/temori1919/items/bcbfc4a93301ef902d1d
 
 ## resizeイベント
 ```
-// cssアニメ定義
+/* cssアニメ定義 */
 
 .target{
     transition:1s;
