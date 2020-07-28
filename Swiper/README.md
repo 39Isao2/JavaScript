@@ -117,7 +117,9 @@ var swiper = new Swiper('.swiper-container', {
      delay: 500, // 次スライドまでの待機時間
   },
    speed: 1000, // スライドするスピード
-   loop:true, 
+   loop:true,
+   observer: true, // ローディング後のうまく行かない挙動対策
+   observeParents: true,
    
 });
 
