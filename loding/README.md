@@ -84,6 +84,32 @@ setTimeout(function(){
 ```
 
 
-## animate.css を使ってスプラッシュアニメーションを作ってみよう！
-簡単にcssアニメを実装できるライブラリです。
-<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/animatecss.png" width="600px">
+# animate.css を使ってスプラッシュアニメーションを作ってみよう！
+簡単にcssアニメを実装できるライブラリです。<br>
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/animatecss.png" width="600px"><br>
+公式サイト:https://animate.style/ <br>
+
+## まずはライブラリを読み込む
+
+```
+<!-- <head>タグ内に記載 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+
+```
+
+## 動かしたい対象にanimate__animatedクラスをつける
+
+```
+<h1 class="animate__animated"> 文字やimg </h1>
+
+```
+
+## 動かしたいアニメーション内容をaddClassする
+```
+
+$('h1').addClass('animate__bounceInDown');
+
+```
