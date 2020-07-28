@@ -2,11 +2,9 @@
 目的地までスクロールして移動してくれる便利なプラグインです。  
 
 <img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/smooth-scroll.png" width="600px">
-<br>
-公式のGitHubページ https://github.com/cferdinandi/smooth-scroll  
-使い方参考サイト<br>
-<br>
-スムーズな移動！「smooth-scroll.js」で固定ヘッダーも考慮したページ内リンク<br>
+<br><br>
+公式のGitHubページ https://github.com/cferdinandi/smooth-scroll <br><br>
+使い方参考サイト:  スムーズな移動！「smooth-scroll.js」で固定ヘッダーも考慮したページ内リンク<br>
 https://haniwaman.com/smooth-scroll-js/
 
 
