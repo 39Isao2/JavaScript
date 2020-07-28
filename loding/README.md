@@ -84,10 +84,10 @@ setTimeout(function(){
 ```
 
 
-# animate.css を使ってスプラッシュアニメーションを作ってみよう！
+# animate.css を使ってみる。
 簡単にcssアニメを実装できるライブラリです。<br>
 <img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/animatecss.png" width="600px"><br>
-公式サイト:https://animate.style/ <br>
+公式サイト:https://animate.style/ <br><br>
 
 ## まずはライブラリを読み込む
 
@@ -111,5 +111,53 @@ setTimeout(function(){
 ```
 
 $('h1').addClass('animate__bounceInDown');
+
+```
+# スプラッシュアニメーションを作ってみる。
+
+```
+    <!-- html -->
+
+    <div class="loader-wrap">
+        <h1 id="loading-anime" class="animate__animated">Summer <br>is <br>comming!!</h1>
+    </div>
+
+```
+
+```
+/* css */
+
+/* 装飾 */
+#loading-anime{
+  display: none;
+  font-size: 60px;
+  color:#333;
+  font-family: 'Lexend Zetta', sans-serif;
+  text-align: center;
+  line-height: 2.0;
+}
+
+```
+
+## JavaScriptの記述
+
+```
+
+$(function(){
+
+    // display blockに
+    $('#loading-anime').show();
+
+    // アニメーションをつける
+    $('#loading-anime').addClass('animate__bounceInDown');
+
+
+    // 3秒後に
+    setTimeout(() =>{
+        $('.loader-wrap').fadeOut();
+	$('#container').fadeIn();
+    },2000);
+
+});
 
 ```
