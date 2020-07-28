@@ -181,33 +181,6 @@ footer {
 
 
 /*----------------------------------------------
-ここからscroll fade
------------------------------------------------*/
-.scroll-effect{
-  opacity : 0; /* 透明に */
-  transform : translate(0, 45px); /* 実際の位置より45px下げる */
-  transition : all 0.5s;  /* トランジションの設定 */
-}
-  
-.scroll-in{
-  opacity : 1; 
-  transform : translate(0, 0); /* 元の位置に */
-}
-
-.d1{
-  transition-delay:0.1s;
-}
-.d2{
-  transition-delay:0.2s;
-}
-.d3{
-  transition-delay:0.3s;
-}
-
-
-
-
-/*----------------------------------------------
 sp設定　768px以下の表示
 -----------------------------------------------*/
 @media (max-width: 768px) {
@@ -263,3 +236,29 @@ sp設定　768px以下の表示
 }/* 768px END*/
 
 
+
+
+/*----------------------------------------------
+ここからscroll fade cssアニメ定義
+-----------------------------------------------*/
+.scroll-effect{
+  opacity : 0; /* 透明に */
+  transform : translate(0, 45px); /* 実際の位置より45px下げる */
+  transition : all 0.5s;  /* トランジションの設定 */
+}
+  
+.scroll-in{
+  opacity : 1; 
+  transform : translate(0, 0); /* 元の位置に */
+}
+
+
+.d1{
+  transition-delay:0.1s; /* アニメ開始の遅延設定 */
+}
+.d2{
+  transition-delay:0.2s;
+}
+.d3{
+  transition-delay:0.3s;
+}
