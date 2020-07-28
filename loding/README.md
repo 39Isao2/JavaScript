@@ -153,7 +153,7 @@ $(function(){
     $('#loading-anime').addClass('animate__bounceInDown');
 
 
-    // 3秒後に
+    // 2秒後に発火
     setTimeout(() =>{
         $('.loader-wrap').fadeOut();
 	$('#container').fadeIn();
