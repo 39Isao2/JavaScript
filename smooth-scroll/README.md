@@ -7,9 +7,13 @@
 使い方参考サイト:  スムーズな移動！「smooth-scroll.js」で固定ヘッダーも考慮したページ内リンク<br>
 https://haniwaman.com/smooth-scroll-js/
 
+<br>
+<br>
 
 ## まずはGitHubから最新版をダウンロードしてHTMLに読み込む
-* 使用するのは、dist内のsmooth-scroll.polyfills.min.js
+
+使用するのは、dist内のsmooth-scroll.polyfills.min.js <br>
+
 ```
 <script src="js/smooth-scroll.polyfills.min.js"></script>
 
