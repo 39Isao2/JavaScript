@@ -12,7 +12,7 @@ $('#accordion dt').on('click',function(){
 });
 ```
 
-## 解説
+## 解説  $(this)の扱いが肝です。
 
 dl,dt,ddタグでよく組まれます。(Q&Aの場合)  
 slideToggle() はクリックやタップするたびに、スライド開閉する便利なjQueryの関数です。  
