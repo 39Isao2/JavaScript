@@ -71,6 +71,19 @@ $(window).on('scroll load', function (){
 
 
 
+
+## 横からfadeInなども可能
+
+```
+
+.scroll-effect{
+  opacity : 0;
+  transform : translate(45px, 0px); /* 実際の位置より45px右に */
+  transition : all 0.5s;
+}
+
+```
+
 ## cssのtransition-delayでアレンジしてみよう！
 
 
@@ -108,5 +121,3 @@ $(window).on('scroll load', function (){
 
 
 ```
-
-メモ : https://oku-log.com/blog/fadein/
