@@ -82,3 +82,6 @@ setTimeout(function(){
 
 
 ```
+
+
+## animate.css を使ってスプラッシュアニメーションを作ってみよう！
