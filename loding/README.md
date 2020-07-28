@@ -85,8 +85,9 @@ setTimeout(function(){
 
 
 # animate.css を使ってみる。
-簡単にcssアニメを実装できるライブラリです。<br>
-<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/animatecss.png" width="600px"><br>
+簡単にcssアニメを実装できるライブラリです。<br><br>
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/animatecss.png" width="600px">
+<br><br>
 公式サイト:https://animate.style/ <br><br>
 
 ## まずはライブラリを読み込む
