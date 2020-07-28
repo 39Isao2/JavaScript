@@ -85,3 +85,5 @@ setTimeout(function(){
 
 
 ## animate.css を使ってスプラッシュアニメーションを作ってみよう！
+簡単にcssアニメを実装できるライブラリです。
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/animatecss.png" width="600px">
