@@ -4,9 +4,9 @@
 <img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/smooth-scroll.png" width="600px">
 <br>
 公式のGitHubページ https://github.com/cferdinandi/smooth-scroll  
-使い方参考サイト  
+使い方参考サイト<br>
 <br>
-スムーズな移動！「smooth-scroll.js」で固定ヘッダーも考慮したページ内リンク
+スムーズな移動！「smooth-scroll.js」で固定ヘッダーも考慮したページ内リンク<br>
 https://haniwaman.com/smooth-scroll-js/
 
 
@@ -21,7 +21,7 @@ https://haniwaman.com/smooth-scroll-js/
 
 ```
 
-	<!-- ナビゲーション部分 -->
+    <!-- ナビゲーション部分 -->
     <ul>
         <li><a data-scroll href="#section1">navi01</a></li>
         <li><a data-scroll href="#section2">navi02</a></li>
