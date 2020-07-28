@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/humberger.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <div id="container">
@@ -33,12 +31,32 @@
     </header>
 
     <!-- ここからメイン画像 -->
-    <section class="main_image">
-        <div>
-            <h1>logo</h1>
-            <img src="images/mainvisual1.jpg" alt="メインイメージ">
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <h1>logo</h1>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="images/mainvisual1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/mainvisual2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/mainvisual3.jpg" alt=""></div>
         </div>
-    </section>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+
+
+
+
     <!-- /ここまでメイン画像 -->
 
     <main>
@@ -76,13 +94,9 @@
     <footer>
         <small>&copy; 2019 attsu inc.</small>
     </footer>
-  </div><!-- /#container -->
+    </div><!-- /#container -->
     <script src="js/humberger.js"></script>
-
-
-    <script>
-    var mySwiper = new Swiper('.swiper-container');
-    </script>
+    <!-- ここにscript.js読み込み -->
 
     
 </body>

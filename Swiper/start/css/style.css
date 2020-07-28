@@ -40,16 +40,15 @@ header {
 
 
 
-/*----------------------------------------------
-ここからswiper用のcssを書く
------------------------------------------------*/
 header {
   margin-bottom: 0px;
 }
 .sp_header{
   display: none;
 }
-.main_image h1 {
+/*.main_image h1*/
+.swiper-container h1
+ {
   width: 120px;
   background-color: rgba(0,0,0,0.05);
   border-radius: 3px;
@@ -63,7 +62,10 @@ header {
   top: 50%;
   left: 50%;
   transform: translate( -50%, -50%);
+  /* 大事 */
+  z-index: 999;
 }
+
 
 article {
   box-sizing: border-box;
@@ -236,3 +238,12 @@ sp設定　768px以下の表示
     width: 100%;
   }
 }/* 768px END*/
+
+
+
+/*----------------------------------------------
+ここからswiper用のcssを書く
+-----------------------------------------------*/
+
+
+
