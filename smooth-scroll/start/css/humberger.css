@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* =======================
+.menu-trigger
+======================= */
+.menu-trigger {
+  display: none; /*PCの時は消しておく*/
+  -webkit-appearance: none; /* Crome用　フォ-ム要素の初期化*/
+  appearance: none; /*フォ-ム要素の初期化*/
+  border: none;
+  background: transparent; /* Firefox用 背景を透過させる設定*/
+}
+.menu-trigger,
+.menu-trigger span {
+	display: inline-block; /* ブロック要素とインライン要素の中間の状態の要素*/
+	transition: all .4s;
+	box-sizing: border-box;
+}
+
+/* =======================
+#global-nav
+======================= */
+#global-nav {
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+#global-nav ul {
+  display: flex; /*子要素の横並びの設定*/
+  justify-content: center; /* 中央に寄せる設定*/
+  list-style: none;/*リストの中黒を取る設定*/
+  padding: 12px;
+}
+
+#global-nav li{
+  margin: 0 6%;
+}
+
+#global-nav li a {
+   color:#fff;
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+/* =======================
+responsive
+======================= */
+@media (max-width:767px) {
+  /*----- スマホ ハンバーガーメニュー ----- */
+  .sp_header {
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 3;
+  }
+  .menu-trigger {
+    width: 56px;
+    height: 60px;
+    /*positionで画面左上に絶対配置*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    /*要素の重なり、上のレイヤーと同じ考えかた*/
+    z-index: 2;
+    /*クリックした際のボタン周りの線を消す*/
+    outline: none;
+  }
+  .menu-trigger span {
+    position: absolute;
+    left: 50%;
+    width: 32px;
+    height: 3px;
+    background-color: #fff;
+    /*menu-trigger内のspan全体を中心位置に揃える設定*/
+    transform: translate(-50%, -50%);
+  }
+  .menu-trigger span:nth-of-type(1) {
+    top: 15px;
+  }
+  .menu-trigger span:nth-of-type(2) {
+    top: 49%;
+  }
+  .menu-trigger span:nth-of-type(3) {
+    bottom: 13px;
+  }
+/*.activeが付いているものは
+クリックした際した後の表示を設定しています。*/
+  .menu-trigger.active span:nth-of-type(1) {
+    top: 49%;
+    /* 変形の設定　右側の軸は変えずに左側を傾けている */
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .menu-trigger.active span:nth-of-type(2) {
+    opacity: 0; /*透過の指定で消してる*/
+  }
+  .menu-trigger.active span:nth-of-type(3) {
+    bottom: 49%;
+    /* 変形の設定　右側の軸は変えずに左側を上に傾けている */
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  /*----- スマホ ナビゲーション ----- */
+  #global-nav {
+    display: none;/* クリックする前は消えてほしい*/
+    width: 100vw;/*画面横幅めいいっぱい広げる*/
+    height: 100vh;/*画面縦幅めいいっぱい広げる*/
+    background: rgba(0,0,0,0.8);
+    margin: 0;
+    padding: 90px 5% 0;
+    /*positionと組み合わせページをスクロールした場合も同じ位置に常に置く設定　transrateXと合わせてど真ん中に位置を合わせる設定*/
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;/* 何かしらの要素の背面に設置*/
+  }
+  #global-nav.active {
+    display: block;/* クリックした時に表示*/
+    z-index: 1;/* 何かしらの要素の全面に設置*/
+  }
+
+  #global-nav ul {
+    /* display:flex;を解除して縦並びにしている*/
+    display: block;
+  }
+
+  #global-nav li {
+    margin: 0 auto;
+  }
+
+  #global-nav li,
+  #global-nav li:last-child {
+    /*画面横にめいいっぱい伸ばしている設定*/
+    text-align: center;
+    margin-bottom: 6%;
+  }
+  #global-nav li a {
+    font-size: 24px;
+    text-align: center;
+    background: none;
+    padding-top: 12px;
+  }
+}/* max-width:767px END*/
