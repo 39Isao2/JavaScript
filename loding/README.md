@@ -116,11 +116,11 @@ $('h1').addClass('animate__bounceInDown');
 # スプラッシュアニメーションを作ってみる。
 
 ```
-    <!-- html -->
+<!-- html -->
 
-    <div class="loader-wrap">
-        <h1 id="loading-anime" class="animate__animated">Summer <br>is <br>comming!!</h1>
-    </div>
+<div class="loader-wrap">
+    <h1 id="loading-anime" class="animate__animated">Summer <br>is <br>comming!!</h1>
+</div>
 
 ```
 
