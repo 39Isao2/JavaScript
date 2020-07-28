@@ -156,7 +156,7 @@ $(function(){
     // 2秒後に発火
     setTimeout(() =>{
         $('.loader-wrap').fadeOut();
-  $('#container').fadeIn();
+        $('#container').fadeIn();
     },2000);
 
 });
