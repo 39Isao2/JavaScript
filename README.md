@@ -10,4 +10,5 @@
 * [smooth-scroll.js(ページ内スクロール)](https://github.com/55Kaerukun/JavaScript/blob/master/smooth-scroll/README.md)
 * [アコーディオンメニュー](https://github.com/55Kaerukun/JavaScript/blob/master/accordion/README.md)
 * [ローディング](https://github.com/55Kaerukun/JavaScript/blob/master/loding_splash/README.md)
+* [モーダルウインドウ](https://github.com/55Kaerukun/JavaScript/blob/master/modal/README.md)
 * [スプラッシュアニメーション](https://github.com/55Kaerukun/JavaScript/blob/master/loding_splash/README.md)
