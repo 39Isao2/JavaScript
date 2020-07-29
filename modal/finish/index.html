@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sample-responsible</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:700|Noto+Serif+TC:700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/humberger.css">
+    <link rel="stylesheet" type="text/css" href="css/remodal.css">
+    <link rel="stylesheet" type="text/css" href="css/remodal-default-theme.css">
+</head>
+<body>
+    <div id="container">
+    <header>
+        <div class="sp_header">
+        <button type="button" class="menu-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        </div><!-- /.sp_header -->
+        <nav id="global-nav">
+            <ul>
+                <li><a href="">navi01</a></li>
+                <li><a href="">navi02</a></li>
+                <li><a href="">navi03</a></li>
+                <li><a href="">navi04</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ここからメイン画像 -->
+    <section class="main_image">
+        <div>
+            <h1>logo</h1>
+            <img src="images/mainvisual1.jpg" alt="メインイメージ">
+        </div>
+    </section>
+    <!-- /ここまでメイン画像 -->
+
+    <main>
+    <article>
+        <section id="content00">
+                <h2>サブタイトル00</h2>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </section>
+        <section id="content01">
+            <div>
+                <h2>サブタイトル01</h2>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+            <figure>
+                <img src="images/thum00.jpg" alt="家族">
+            </figure>
+        </section>
+        <section id="content02">
+            <h2>サブタイトル02</h2>
+            <ul id="photo_list">
+
+                <li>
+                    <!-- モーダルボタン -->
+                    <a href="#modal">
+                        <img src="images/thum01.jpg" alt="アクティビティ01">
+                    </a>
+                    <!-- モーダルに出てくる内容 -->
+                    <div class="remodal" data-remodal-id="modal">
+                    <!-- クローズボタン -->
+                        <img src="images/thum01.jpg" alt="アクティビティ01"></a>
+                         <!-- <button data-remodal-action="cancel" class="remodal-close"></button> -->
+                          <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+                    </div>
+                </li>
+
+                <li>
+                    <!-- モーダルボタン -->
+                    <a href="#modal2">
+                        <img src="images/thum02.jpg" alt="アクティビティ02">
+                    </a>
+                    <!-- モーダルに出てくる内容 -->
+                    <div class="remodal" data-remodal-id="modal2">
+                    <!-- クローズボタン -->
+                    <button data-remodal-action="close" class="remodal-close"></button>
+                        <img src="images/thum02.jpg" alt="アクティビティ02"></a>
+                    </div>
+                </li>
+                <li><a href=""><img src="images/thum03.jpg" alt="アクティビティ03"></a></li>
+                <li><a href=""><img src="images/thum02.jpg" alt="アクティビティ01"></a></li>
+                <li><a href=""><img src="images/thum03.jpg" alt="アクティビティ02"></a></li>
+                <li><a href=""><img src="images/thum01.jpg" alt="アクティビティ03"></a></li>
+            </ul>
+        </section>
+        <section>
+        <dl id="accordion">
+            <dt>Q1、平均年齢や男女比を教えて下さい。</dt>
+            <dd>A、平均年齢は29歳です。男女比は、男性8割、女性2割ほどです。</dd>
+            <dt>Q2、どのような服装で働いていますか？</dt>
+            <dd>A、基本的には服装髪型共に自由です。メンバーそれぞれが働きやすいスタイルで仕事をしています。お客様にお会いするときなどは、失礼のない服装をしています。</dd>
+            <dt>Q3、ここに質問。</dt>
+            <dd>A、ここに回答。ここに回答。ここに回答。</dd>
+            <dt>Q4、ここに質問。</dt>
+            <dd>A、ここに回答。ここに回答。ここに回答。</dd>
+        </dl>
+        </section>
+        <section id="content03">
+            <a href="" class="contact">お問い合わせ</a>
+        </section>
+    </article>
+    </main>
+    <footer>
+        <small>&copy; 2019 attsu inc.</small>
+    </footer>
+  </div><!-- /#container -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="js/humberger.js"></script>
+
+    <!-- remodal.min.jsを読み込む -->
+    <script src="js/remodal.min.js"></script>
+
+    <!-- ここにscript.jsを読み込む-->
+    <script src="js/script.js"></script>
+
+
+    
+
+
+
+    
+</body>
+</html>
