@@ -68,12 +68,20 @@ $('#btn');
 });
 
 
-
 // ヒント！(背景を赤にするコードはこの2行)
 let bgColor = 'red';
 document.querySelector('body').style.backgroundColor = 'red';
 
 
+
+/* setTimeoutの紹介 */
+
+// 時間差の処理
+setTimeout(() => {
+  document.querySelector('body').style.backgroundColor = 'red';
+}, 1000);
+    
+    
 ```
 
 ## 配列
@@ -128,6 +136,51 @@ for (let i = 0; i < fruits.length; i++) {
 
 ## if文 (条件分岐)
 
+```
+if (条件式) {
+    条件式が成り立った場合にここを通る
+}
+
+let num = 100;
+if (num > 50) {
+    console.log("numは50より大きいです。");
+}
+
+
+
+/**   elseの使い方  **/
+
+if (条件式) {
+    条件式が成り立った場合にここを通る
+}else{
+    条件式が成り立たなければここを通る
+}
+
+let num = 50;
+
+if (num > 100) {
+    console.log("numは80より大きいです。");
+} else {
+    console.log("numは100より小さいです");
+}
+
+
+/**  文字列の一致 **/
+
+let animal = "ねこ";
+
+if(animal == "ねこ"){
+    alert('ねこを飼っています。');
+} else {
+    alert('ねこを飼っていません');
+}
+
+
+
+
+
+```
+
 ## 関数
 複数の処理をひとまとめにして実行できるようにする機能。<br>
 例えると「自動販売」のようなもので、「コインを入れて、ボタンを押すと、何かが出てくる」ような仕組み<br>
@@ -140,18 +193,16 @@ for (let i = 0; i < fruits.length; i++) {
 
     // カフェの設定でいきます。
 
-    
-    // アロー関数で書いてみよう！
     let order = () => {
-        alert("おはようございます、コーヒーを一杯どうぞ");
+        alert('おはようございます、コーヒーを一杯どうぞ');
     }
     order();
     
     
     // 引数ありver
-    let drink = "カフェラテ";
+    let drink = 'カフェラテ';
     let order = (drink) => {
-        alert("おはようございます、"+  drink +" を一杯どうぞ");
+        alert('おはようございます、'+  drink + 'を一杯どうぞ');
     }
     order(drink);
     
@@ -170,10 +221,6 @@ for (let i = 0; i < fruits.length; i++) {
     alert(coffeePrice); // 290
     
     
-    
-    setTimeout(() => {
-      document.querySelector('.target').classList.add('fadeout');
-    }, 1000);
     
 ES6のコードを変換（トランスパイル）<br>
 https://barikanblog.com/javascript-es6-babel/ <br>
