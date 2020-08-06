@@ -56,11 +56,21 @@ document.querySelector('#target');  <br>
 // 例:ボタンの取得
 document.querySelector('#btn');
 
+// jQueryだと
+$('#btn');
 
-// 問題！ボタンクリックでbodyの背景を赤にしてみましょう！
-// ヒント
+
+// 問題！ボタンクリックでbodyの背景を赤にしてみましょう！（ちょっと難しいけどjs理解！）
+
+(ターゲット).addEventListener('イベント名', () => {
+    // やりたいこと
+});
+
+
+
+// ヒント！(背景を赤にするコードはこの2行)
 let bgColor = 'red';
-document.querySelector('body').style.backgroundColor = bgColor;
+document.querySelector('body').style.backgroundColor = 'red';
 
 
 ```
