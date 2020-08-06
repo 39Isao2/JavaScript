@@ -74,3 +74,63 @@ document.querySelector('body').style.backgroundColor = 'red';
 
 
 ```
+
+
+## 関数
+複数の処理をひとまとめにして実行できるようにする機能。<br>
+例えると「自動販売」のようなもので、「コインを入れて、ボタンを押すと、何かが出てくる」ような仕組み<br>
+解説参考: https://kitsune.blog/function
+
+
+<br>
+<img src="http://hareumi.com/jskouza/sutaba.png" width="150px">
+<br>
+
+    // カフェの設定でいきます。
+
+    
+    // アロー関数で書いてみよう！
+    let order = () => {
+        alert("おはようございます、コーヒーを一杯どうぞ");
+    }
+    order();
+    
+    
+    // 引数ありver
+    let drink = "カフェラテ";
+    let order = (drink) => {
+        alert("おはようございます、"+  drink +" を一杯どうぞ");
+    }
+    order(drink);
+    
+    
+    
+    // 返り値（return）
+    let drink = "コーヒー";
+    
+    let order = (drink) => {
+        let price = 290;
+        return price;
+    }
+    
+    // コーヒーの値段
+    let coffeePrice = getPrice(drink);
+    alert(coffeePrice); // 290
+    
+    
+    
+    setTimeout(() => {
+      document.querySelector('.target').classList.add('fadeout');
+    }, 1000);
+    
+ES6のコードを変換（トランスパイル）<br>
+https://barikanblog.com/javascript-es6-babel/ <br>
+
+参考 : 注意！IE11で使えない最新JavaScritコード（ES6）2018年9月24日 <br>
+https://blog.capilano-fw.com/?p=1273
+
+
+<br>
+<br>
+<br>
+
