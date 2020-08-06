@@ -76,6 +76,27 @@ document.querySelector('body').style.backgroundColor = 'red';
 
 ```
 
+## 配列
+
+値を順序付けて複数格納できるローカールームのようなもの。<br>
+位置を使用して配列にアクセスする（0から数えます）
+
+
+<img src="https://github.com/55Kaerukun/Processing/raw/master/images/array.jpg" width="500px" style="max-width:100%;">
+
+```
+let fruits = ['イチゴ', 'メロン', 'リンゴ', 'バナナ'];
+
+alert(fruits[1]); // メロン
+
+// 配列の末尾に要素を追加する
+fruits.push('キウイ');
+
+// 配列の末尾の要素を削除する
+fruits.pop();
+
+```
+
 
 ## 関数
 複数の処理をひとまとめにして実行できるようにする機能。<br>
