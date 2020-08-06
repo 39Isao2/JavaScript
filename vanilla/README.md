@@ -32,11 +32,9 @@ TAX = 2.0; // エラー
 
 ```
 
-### イベントをバニラjsで
-
+## イベントをバニラjsで
+jQueryのon()メソッドが、addEventListenerメソッド
 ```
-
-// jQueryのon()メソッドがaddEventListenerメソッド
 
 document.addEventListener('DOMContentLoaded', () => {
     alert('html読み込み！');
@@ -47,11 +45,16 @@ $(function(){
     alert('html読み込み！');
 });
 
+```
 
-// 要素の取得はquerySelectorメソッドを使う
-document.querySelector('body');
-document.querySelector('#target');
+### 要素の取得はquerySelectorメソッドを使う
+document.querySelector('body'); <br>
+document.querySelector('#target');  <br>
 
+```
+
+// 例:ボタンの取得
+document.querySelector('#btn');
 
 
 // 問題！ボタンクリックでbodyの背景を赤にしてみましょう！
