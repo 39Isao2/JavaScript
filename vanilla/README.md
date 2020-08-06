@@ -119,7 +119,7 @@ for (let i = 0; i < 3; i++) {
 //配列の要素数回す。
 
 for (let i = 0; i < fruits.length; i++) {
-   console.log( fruits[i] );
+   console.log(fruits[i]);
 }
 
 
