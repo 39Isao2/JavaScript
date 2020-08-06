@@ -69,8 +69,8 @@ Remodalというプラグインを紹介します。
 ```
 
 .remodal img{
-	width:100%;
-	height:auto;
+    width:100%;
+    height:auto;
 }
 
 ```
