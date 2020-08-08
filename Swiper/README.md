@@ -129,8 +129,8 @@ var swiper = new Swiper('.swiper-container', {
 ### 参考:エフェクトの種類
 
 ```
-effect: 'fade', <br>
-effect: 'flip', <br>
+effect: 'fade', 
+effect: 'flip',
 ```
 
 など。デザインに合った、自分の目指すスライドショーを作りましょう。<br>
