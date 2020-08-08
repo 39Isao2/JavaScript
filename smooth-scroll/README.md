@@ -4,8 +4,8 @@
 <img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/smooth-scroll.png" width="600px">
 <br><br>
 公式のGitHubページ https://github.com/cferdinandi/smooth-scroll <br><br>
-使い方参考サイト:  スムーズな移動！「smooth-scroll.js」で固定ヘッダーも考慮したページ内リンク<br>
-https://haniwaman.com/smooth-scroll-js/
+使い方参考サイト:  スムーススクロールを実装する方法(ページ内をゆっくり移動)<br>
+https://syncer.jp/how-to-make-smooth-scroll-without-jquery
 
 <br>
 <br>
