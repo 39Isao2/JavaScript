@@ -1,6 +1,6 @@
 # タブメニューの作りかた
 
-<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/qa.png" width="600px">
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/tab.png" width="600px">
 <br>
 
 ## htmlの記述
