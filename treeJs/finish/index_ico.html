@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+</head>
+<body>
+  <canvas id="stage"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
+  <script>
+  window.addEventListener('load', () =>{
+  // レンダリング環境を作成
+  const renderer = new THREE.WebGLRenderer({
+    canvas: document.querySelector('#stage')
+  });
+
+
+  
+  // サイズを指定
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  renderer.setSize(width, height);
+
+  // シーンの作成
+  const scene = new THREE.Scene();
+
+  // カメラの作成
+  const camera = new THREE.PerspectiveCamera(45, width / height, 1, 2000);
+  camera.position.set(0, 0, +1000);
+
+  // 立方体の作成
+  // ジオメトリ
+  //const geometry = new THREE.BoxGeometry(300, 300, 300);
+  // ジオメトリーを作成
+  const geometry = new THREE.IcosahedronGeometry( 200, 1 );
+
+  // マテリアル  color: 0xから始まる16進数
+  //const material = new THREE.MeshNormalMaterial();
+  const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
+  const box = new THREE.Mesh(geometry, material);
+  scene.add(box);
+
+
+  // アニメーションで表示し続ける
+  // 初回実行
+  tick();
+
+  function tick() {
+    requestAnimationFrame(tick);
+
+    // アニメーション処理をここに書く
+    box.rotation.y += 0.01;
+    box.rotation.z += 0.01;
+
+    // レンダリングで表示
+    renderer.render(scene, camera);
+
+  }
+});
+
+
+
+  </script>
+</body>
+</html>
