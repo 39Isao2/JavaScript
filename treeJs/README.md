@@ -5,7 +5,7 @@ HTMLの3D技術「WebGL」を扱いやすくしたフレームワークです。
 <br>
 
 ## 今回のゴール
-簡単な図形の描画と回転アニメーション。<br>
+簡単な図形の描画と回転アニメーション。<br><br>
 <img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/box.png" width="210px" alt="box"> 
 <img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/ico.png" width="200px" alt="box"> <br>
 
