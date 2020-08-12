@@ -5,9 +5,9 @@ HTMLの3D技術「WebGL」を扱いやすくしたフレームワークです。
 <br>
 
 ## 今回のゴール
-簡単な図形の描画と回転アニメーション。
-<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/box.png" width="400px" alt="box">
-<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/ico.png" width="400px" alt="box">
+簡単な図形の描画と回転アニメーション。<br>
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/box.png" width="200px" alt="box"> <br>
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/ico.png" width="200px" alt="box"> <br>
 
 ## canvas要素を用意する
 WebGLによるグラフィックはcanvasというタグの中に描いていきます。<br>
@@ -17,8 +17,6 @@ idを記載しましょう。canvas要素の大きさはJavaScriptを使って�
 <body>
   <canvas id="stage"></canvas>
 </body>
-
-
 ```
 ## three.jsを読み込む
 
@@ -28,7 +26,8 @@ idを記載しましょう。canvas要素の大きさはJavaScriptを使って�
 ```
 
 ## loadイベントの発火(HTMLが読み込まれたか)を確認
-WebGLの処理はページの読み込みが終わってから実行させます。addEventListener()関数(jQueryでいうonメソッド)ページが読み込み終わったときに実行させたい命令を指定します。
+WebGLの処理はページの読み込みが終わってから実行させます。<br>
+addEventListener()関数(jQueryでいうonメソッド)ページが読み込み終わったときに実行させたい命令を指定します。
 
 ```
 <script>
@@ -60,7 +59,6 @@ renderer.setSize(width, height);
 
 ## シーンの作成
 3D空間を描画する為の空間を作成
-
 ```
 const scene = new THREE.Scene();
 
@@ -145,53 +143,53 @@ function tick() {
   <canvas id="stage"></canvas>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
   <script>
-  
-  // レンダリング環境を作成
-  const renderer = new THREE.WebGLRenderer({
-    canvas: document.querySelector('#stage')
+  window.addEventListener('load', () =>{
+    // レンダリング環境を作成
+    const renderer = new THREE.WebGLRenderer({
+      canvas: document.querySelector('#stage')
+    });
+
+
+
+    // サイズを指定
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    renderer.setSize(width, height);
+
+    // シーンの作成
+    const scene = new THREE.Scene();
+
+    // カメラの作成
+    const camera = new THREE.PerspectiveCamera(45, width / height, 1, 2000);
+    camera.position.set(0, 0, +1000);
+
+    // 立方体の作成
+    // ジオメトリ
+    const geometry = new THREE.BoxGeometry(300, 300, 300);
+
+    // マテリアル  color: 0xから始まる16進数
+    const material = new THREE.MeshNormalMaterial();
+    // const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
+    const box = new THREE.Mesh(geometry, material);
+    scene.add(box);
+
+
+    // アニメーションで表示し続ける
+    // 初回実行
+    tick();
+
+    function tick() {
+      requestAnimationFrame(tick);
+
+      // アニメーション処理をここに書く
+      box.rotation.y += 0.01;
+      // box.rotation.z += 0.01;
+
+      // レンダリングで表示
+      renderer.render(scene, camera);
+
+    }
   });
-
-
-  
-  // サイズを指定
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-  renderer.setSize(width, height);
-
-  // シーンの作成
-  const scene = new THREE.Scene();
-
-  // カメラの作成
-  const camera = new THREE.PerspectiveCamera(45, width / height, 1, 2000);
-  camera.position.set(0, 0, +1000);
-
-  // 立方体の作成
-  // ジオメトリ
-  const geometry = new THREE.BoxGeometry(300, 300, 300);
-
-  // マテリアル  color: 0xから始まる16進数
-  const material = new THREE.MeshNormalMaterial();
-  // const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
-  const box = new THREE.Mesh(geometry, material);
-  scene.add(box);
-
-
-  // アニメーションで表示し続ける
-  // 初回実行
-  tick();
-
-  function tick() {
-    requestAnimationFrame(tick);
-
-    // アニメーション処理をここに書く
-    box.rotation.y += 0.01;
-    // box.rotation.z += 0.01;
-
-    // レンダリングで表示
-    renderer.render(scene, camera);
-
-  }
-
   </script>
 </body>
 </html>
@@ -202,7 +200,6 @@ function tick() {
 
 ```
 const geometry = new THREE.IcosahedronGeometry( 100, 1 );
-
 const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
 
 ```
