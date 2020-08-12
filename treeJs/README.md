@@ -1,9 +1,13 @@
-# Tree.js入門
+# Tree.js超入門
 HTMLの3D技術「WebGL」を扱いやすくしたフレームワークです。
 
-<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/qa.png" width="600px" alt="three.jsの画像">
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/treejs.png" width="600px" alt="three.jsの画像">
 <br>
 
+## 今回のゴール
+簡単な図形の描画と回転アニメーション。
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/box.png" width="400px" alt="box">
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/ico.png" width="400px" alt="box">
 
 ## canvas要素を用意する
 WebGLによるグラフィックはcanvasというタグの中に描いていきます。<br>
@@ -65,7 +69,7 @@ const scene = new THREE.Scene();
 ## カメラの作成
 3Dではどの視点から空間を撮影するか、というカメラの定義をします。<br>
 今回はTHREE.PerspectiveCameraで画角、アスペクト比、描画開始距離、描画終了距離の4つの情報を使って定義します。
-<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/noguson.png" width="600px" alt="nogusoncameraの画像">
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/nogson.png" width="600px" alt="">
 
 ```
 // new THREE.PerspectiveCamera(視野角, アスペクト比, near, far)
@@ -80,6 +84,8 @@ camera.position.set(0, 0, +1000);
 
 // 引用 : https://www.nogson.blog/entry/2017/04/25/223025
 ```
+
+# あと少し！
 
 ## 立方体を作る
 メッシュという表示用のオブジェクトを作成する。<br>
@@ -99,8 +105,6 @@ const box = new THREE.Mesh(geometry, material);
 scene.add(box);
 
 ```
-
-# あと少し！
 
 ## アニメーションでシーンを表示し続ける
 requestAnimationFrame()というメソッドを使用して、<br>
