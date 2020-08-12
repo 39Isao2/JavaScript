@@ -21,8 +21,7 @@ idを記載しましょう。canvas要素の大きさはJavaScriptを使って�
 ## three.jsを読み込む
 
 ```
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
-
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
 ```
 
 ## loadイベントの発火(HTMLが読み込まれたか)を確認
@@ -128,7 +127,6 @@ function tick() {
 
 ```
 
-
 お疲れ様でした！<br>
 全コードはこちら。<br>
 
@@ -195,6 +193,20 @@ function tick() {
 </html>
 ```
 
+## OrbitControls.jsを使ってみる
+マウスで自在で3D空間を移動できるOrbitControls.jsを使ってみましょう。
+```
+<!-- OrbitControls.jsを読み込む -->
+<script src="js/OrbitControls.js"></script>
+
+// カメラの作成 あたりに追記
+const controls = new THREE.OrbitControls(camera);
+
+```
+参考: Three.jsのOrbitControlsで手軽にカメラを制御する
+https://ics.media/tutorial-three/camera_orbitcontrols/
+
+
 ## 違うメッシュにしてみよう。
 ワイヤースレームとIcosahedronGeometryにしてみる。<br>
 
@@ -204,6 +216,11 @@ const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true})
 
 ```
 
+
+
+
+
+応用<br>
 参考: Three.jsで大量のパーティクルを表示する方法<br>
 https://ics.media/tutorial-three/points/
 
