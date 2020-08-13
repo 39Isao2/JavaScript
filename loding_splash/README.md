@@ -162,3 +162,6 @@ $(function(){
 });
 
 ```
+
+参考 : WebStorageAPIを使って初回アクセス時だけLoadingを表示する
+https://qiita.com/kfunnytokyo/items/8c7777fa28fef10782d6
