@@ -75,7 +75,7 @@ cssでローディングアニメーションを上下左右中央配置に。
 // });
 
 //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
-setTimeout(function(){
+setTimeout(() =>{
     $('.loader-wrap').fadeOut();
     $('#container').fadeIn();
 },3000);
