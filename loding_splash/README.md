@@ -101,19 +101,14 @@ setTimeout(() =>{
 
 ```
 
-## 動かしたい対象にanimate__animatedクラスをつける
+## 動かしたい対象にanimate__animatedクラスと内容のクラスをつける
 
 ```
-<h1 class="animate__animated"> 文字やimg </h1>
+<h1 class="animate__animated animate__bounceInDown"> 文字やimg </h1>
 
 ```
 
-## 動かしたいアニメーション内容をaddClassする
-```
 
-$('h1').addClass('animate__bounceInDown');
-
-```
 # スプラッシュアニメーションを作ってみる。
 
 ```
