@@ -16,9 +16,9 @@
 </ul>
 <!--タブを切り替えて表示するコンテンツ-->
 <div class="tab-contents">
-    <div class="tab-content is-active">タブ１の内容タブ１内容タブ１内容</div>
-    <div class="tab-content">タブ2の内容タブ2の内容タブ2の内容</div>
-    <div class="tab-content">タブ3の内容タブ3の内容タブ3の内容</div>
+    <p class="tab-content is-active">タブ１の内容タブ１内容タブ１内容</p>
+    <p class="tab-content">タブ2の内容タブ2の内容タブ2の内容</p>
+    <p class="tab-content">タブ3の内容タブ3の内容タブ3の内容</>
 </div>
 </section>
 <!-- ここまでタブ -->
