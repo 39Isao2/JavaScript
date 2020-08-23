@@ -42,14 +42,14 @@ https://projects.lukehaas.me/css-loaders/  <br>
 cssでローディングアニメーションを上下左右中央配置に。
 
 ```
-.loader-wrap {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background: #fff;
+
+/* ブラウザ全画面 */
+.loader-wrap{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ```
