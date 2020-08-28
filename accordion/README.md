@@ -19,6 +19,25 @@
 </dl>
 ```
 
+## css
+
+```
+
+/* アコーディオン用*/
+#accordion dt{
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#accordion dd{
+    padding: 20px;
+    padding-top: 0px;
+    display: none;
+}
+```
+
 ## jQueryのコード
 
 ```
