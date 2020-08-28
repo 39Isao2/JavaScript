@@ -141,8 +141,6 @@ setTimeout(() =>{
 
 $(function(){
 
-
-
     // 2秒後に発火
     setTimeout(() =>{
     
