@@ -12,3 +12,5 @@
 * [ローディング](https://github.com/55Kaerukun/JavaScript/blob/master/loding_splash/README.md)
 * [モーダルウインドウ](https://github.com/55Kaerukun/JavaScript/blob/master/modal/README.md)
 * [スプラッシュアニメーション](https://github.com/55Kaerukun/JavaScript/blob/master/loding_splash/README.md)
+* [タブ切り替え](https://github.com/55Kaerukun/JavaScript/blob/master/loding_splash/README.md)
+* [three.js入門](https://github.com/55Kaerukun/JavaScript/blob/master/loding_splash/README.md)
