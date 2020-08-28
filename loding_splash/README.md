@@ -104,7 +104,7 @@ setTimeout(() =>{
 ## 動かしたい対象にanimate__animatedクラスと内容のクラスをつける
 
 ```
-<h1 class="animate__animated animate__bounceInDown"> 文字やimg </h1>
+<h1 class="animate__animated animate__bounceInDown">ここにテキストや画像</h1>
 
 ```
 
