@@ -115,7 +115,7 @@ setTimeout(() =>{
 <!-- html -->
 
 <div class="loader-wrap">
-    <h1 id="loading-anime" class="animate__animated">Summer <br>is <br>comming!!</h1>
+    <h1 id="loading-anime" class="animate__animated animate__bounceInDown">Summer <br>is <br>comming!!</h1>
 </div>
 
 ```
