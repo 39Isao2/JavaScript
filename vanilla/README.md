@@ -1,4 +1,4 @@
-# JavaScript道場
+# JavaScriptの文法
 硬派に素のjsを勉強していきましょう。
 
 ## 変数と定数
