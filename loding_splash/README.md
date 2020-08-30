@@ -141,14 +141,16 @@ setTimeout(() =>{
 
 $(function(){
 
+    // display blockに
+    $('#loading-anime').show();
+
+    // アニメーションをつける
+    $('#loading-anime').addClass('animate__bounceInDown');
+        
+
     // 2秒後に発火
     setTimeout(() =>{
     
-        // display blockに
-        $('#loading-anime').show();
-
-        // アニメーションをつける
-        $('#loading-anime').addClass('animate__bounceInDown');
     
         $('.loader-wrap').fadeOut();
         $('#container').fadeIn();
