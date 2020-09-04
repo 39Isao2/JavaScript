@@ -84,6 +84,7 @@ Remodalというプラグインを紹介します。
 
 
 
+<!--
 ## closeボタンを変更
 
 ```
@@ -92,6 +93,8 @@ Remodalというプラグインを紹介します。
  <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
 
 ```
+
+-->
 
 メモ(今回のリストのソース)<br>
 https://gist.github.com/55Kaerukun/cd694d00b922452b3aba3ce3e3e70800
