@@ -49,12 +49,12 @@ Remodalというプラグインを紹介します。
 
 <li>
     <!-- モーダルボタン -->
-    <a href="#modal">
+    <a href="#modal1">
         <img src="images/thum01.jpg" alt="ボタン">
     </a>
 
     <!-- モーダルに出てくる内容 -->
-    <div class="remodal" data-remodal-id="modal">
+    <div class="remodal" data-remodal-id="modal1">
     	<button data-remodal-action="close" class="remodal-close"></button>
         <img src="images/thum01.jpg" alt="アクティビティ01"></a>
     </div>
