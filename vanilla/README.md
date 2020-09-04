@@ -103,7 +103,7 @@ if (条件式) {
 let num = 50;
 
 if (num > 100) {
-    console.log("numは80より大きいです。");
+    console.log("numは100より大きいです。");
 } else {
     console.log("numは100より小さいです");
 }
