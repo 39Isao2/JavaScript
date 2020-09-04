@@ -61,15 +61,14 @@ document.querySelector('#btn');
 $('#btn');
 
 
-// 問題！ボタンクリックでbodyの背景を赤にしてみましょう！（ちょっと難しいけどjs理解！）
+// 問題！ボタンクリックでbodyの背景を赤にしてみましょう！
 
 (ターゲット).addEventListener('イベント名', () => {
     // やりたいこと
 });
 
 
-// ヒント！(背景を赤にするコードはこの2行)
-let bgColor = 'red';
+// ヒント！(背景を赤にするコード)
 document.querySelector('body').style.backgroundColor = 'red';
 
 
