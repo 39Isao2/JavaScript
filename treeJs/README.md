@@ -82,6 +82,25 @@ camera.position.set(0, 0, +1000);
 // 引用 : https://www.nogson.blog/entry/2017/04/25/223025
 ```
 
+## ライト
+
+DirectionalLightという太陽光のような一定方向から差し込む光を追加しましょう。<br>
+ライトもシーンに追加することで反映されます。 光源が斜めから差し込むように位置も変更。<br>
+
+```
+
+// new THREE.DirectionalLight(色)
+const light = new THREE.DirectionalLight(0xffffff);
+light.intensity = 2; // 光の強さを倍に
+
+// ライトの位置を変更
+light.position.set(1, 1, 1);
+
+// シーンに追加
+scene.add(light);
+
+```
+
 # あと少し！
 
 ## 立方体を作る
@@ -162,12 +181,12 @@ function tick() {
     camera.position.set(0, 0, +1000);
     
     // ライト
-    const directionalLight = new THREE.DirectionalLight(
+    const light = new THREE.DirectionalLight(
       0xffffff
     );
-    directionalLight.position.set(1, 1, 1);
+    light.position.set(1, 1, 1);
     // シーンに追加
-    scene.add(directionalLight);
+    scene.add(light);
 
     // 立方体の作成
     // ジオメトリ
