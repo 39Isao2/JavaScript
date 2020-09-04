@@ -4,6 +4,8 @@ Remodalというプラグインを紹介します。
 
 ## Remodalのサイトから必要ファイルを読み込み
 <br>公式サイト : http://vodkabears.github.io/remodal/
+<br>使い方参考サイト : 参考 : https://125naroom.com/web/3202 
+
 <br>この3つが必要<br>
 <br>remodal.css
 <br>remodal-default-theme.css
