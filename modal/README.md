@@ -70,9 +70,17 @@ Remodalというプラグインを紹介します。
 
 ```
 
+/* Remodalのcss */
+
+/* 画像のレスポンシブ対応 */
 .remodal img{
     width:100%;
     height:auto;
+}
+
+/* キャンセルボタンの位置調整 */
+.remodal-cancel{
+  margin-top: 20px;
 }
 
 ```
