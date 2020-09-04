@@ -61,21 +61,29 @@ document.querySelector('#btn');
 $('#btn');
 
 
-// 問題！ボタンクリックでbodyの背景を赤にしてみましょう！
+```
+
+### 問題！ボタンクリックでbodyの背景を赤にしてみましょう！
+
+```
 
 (ターゲット).addEventListener('イベント名', () => {
     // やりたいこと
 });
 
-
 // ヒント！(背景を赤にするコード)
 document.querySelector('body').style.backgroundColor = 'red';
 
 
+```
 
-/* setTimeoutの紹介 */
 
-// 時間差の処理
+
+### 時間差の処理
+
+```
+
+// 1秒後に実行
 setTimeout(() => {
   document.querySelector('body').style.backgroundColor = 'red';
 }, 1000);
