@@ -160,6 +160,14 @@ function tick() {
     // カメラの作成
     const camera = new THREE.PerspectiveCamera(45, width / height, 1, 2000);
     camera.position.set(0, 0, +1000);
+    
+    // ライト
+    const directionalLight = new THREE.DirectionalLight(
+      0xffffff
+    );
+    directionalLight.position.set(1, 1, 1);
+    // シーンに追加
+    scene.add(directionalLight);
 
     // 立方体の作成
     // ジオメトリ
