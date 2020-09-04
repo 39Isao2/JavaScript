@@ -77,7 +77,8 @@ camera.position.set(0, 0, +1000);
 
 
 /* アスペクト比 */
-// aspect	描画される出力領域の縦横比	window.innerWidth/widow.innerHeight
+// 描画される出力領域の縦横比	
+window.innerWidth/widow.innerHeight
 ```
 
 ## ライト
