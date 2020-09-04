@@ -91,7 +91,6 @@ DirectionalLightという太陽光のような一定方向から差し込む光�
 
 // new THREE.DirectionalLight(色)
 const light = new THREE.DirectionalLight(0xffffff);
-light.intensity = 2; // 光の強さを倍に
 
 // ライトの位置を変更
 light.position.set(1, 1, 1);
