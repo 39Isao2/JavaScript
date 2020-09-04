@@ -78,86 +78,6 @@ document.querySelector('body').style.backgroundColor = 'red';
 ```
 
 
-
-### 時間の扱い
-
-```
-
-// 1秒後に実行
-setTimeout(() => {
-  document.querySelector('body').style.backgroundColor = 'red';
-}, 1000);
-    
-    
-// 繰り返し処理
-let num = 0;
-let count = () => {
-  num ++;
-  console.log(num);
-
-  if(num == 10){
-    // タイマーが取り消される。
-    clearInterval(timer);
-  }
-};
-
-
-// 1秒ごとにcount()が発動
-let timer = setInterval(count, 1000);
-    
-```
-
-
-## 配列
-
-値を順序付けて複数格納できるローカールームのようなもの。<br>
-位置を使用して配列にアクセスする（0から数えます）
-
-
-<img src="https://github.com/55Kaerukun/Processing/raw/master/images/array.jpg" width="500px" style="max-width:100%;">
-
-```
-let fruits = ['イチゴ', 'メロン', 'リンゴ', 'バナナ'];
-
-alert(fruits[1]); // メロン
-
-// 配列の末尾に要素を追加する
-fruits.push('キウイ');
-
-// 配列の末尾の要素を削除する
-fruits.pop();
-
-```
-
-## for文 (繰り返し処理)
-カウンタ変数を使った繰り返し処理です。（配列と相性が良い）
-
-```
-
-for ( カウンタ変数定義と初期化 ; 繰り返し回数の指定 ; カウンタ加算幅 ){
-   // 実際に実行する処理
-}
-
-for (let i = 0; i < 3; i++) {
-   console.log(i);
-}
-
-結果
-
-// 1
-// 2
-// 3
-
-
-//配列の要素数回す。
-
-for (let i = 0; i < fruits.length; i++) {
-   console.log(fruits[i]);
-}
-
-
-```
-
 ## if文 (条件分岐)
 
 ```
@@ -200,8 +120,91 @@ if(animal == "ねこ"){
 }
 
 
+```
+
+
+
+
+## 配列
+
+値を順序付けて複数格納できるローカールームのようなもの。<br>
+位置を使用して配列にアクセスする（0から数えます）
+
+
+<img src="https://github.com/55Kaerukun/Processing/raw/master/images/array.jpg" width="500px" style="max-width:100%;">
 
 ```
+let fruits = ['イチゴ', 'メロン', 'リンゴ', 'バナナ'];
+
+alert(fruits[1]); // メロン
+
+// 配列の末尾に要素を追加する
+fruits.push('キウイ');
+
+// 配列の末尾の要素を削除する
+fruits.pop();
+
+```
+
+
+## for文 (繰り返し処理)
+カウンタ変数を使った繰り返し処理です。（配列と相性が良い）
+
+```
+
+for ( カウンタ変数定義と初期化 ; 繰り返し回数の指定 ; カウンタ加算幅 ){
+   // 実際に実行する処理
+}
+
+for (let i = 0; i < 3; i++) {
+   console.log(i);
+}
+
+結果
+
+// 1
+// 2
+// 3
+
+
+//配列の要素数回す。
+
+for (let i = 0; i < fruits.length; i++) {
+   console.log(fruits[i]);
+}
+
+
+```
+
+
+### 時間の扱い
+
+```
+
+// 1秒後に実行
+setTimeout(() => {
+  document.querySelector('body').style.backgroundColor = 'red';
+}, 1000);
+    
+    
+// 繰り返し処理
+let num = 0;
+let count = () => {
+  num ++;
+  console.log(num);
+
+  if(num == 10){
+    // タイマーが取り消される。
+    clearInterval(timer);
+  }
+};
+
+
+// 1秒ごとにcount()が発動
+let timer = setInterval(count, 1000);
+    
+```
+
 
 ## 関数
 複数の処理をひとまとめにして実行できるようにする機能。<br>
