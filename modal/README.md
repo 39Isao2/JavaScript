@@ -85,14 +85,10 @@ Remodalというプラグインを紹介します。
 
 
 <!--
-## closeボタンを変更
+closeボタンを変更
 
-```
-
- <!-- ボタンのソースをこちらに変更 -->
+ボタンのソースをこちらに変更 
  <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
-
-```
 
 -->
 
