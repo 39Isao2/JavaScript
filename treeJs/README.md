@@ -112,7 +112,8 @@ scene.add(light);
 const geometry = new THREE.BoxGeometry(300, 300, 300);
 
 // マテリアル color: 0xから始まる16進数
-/*const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});*/
+const material = new THREE.MeshLambertMaterial();
+// const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});  ワイヤーフレームver
 const box = new THREE.Mesh(geometry, material);
 
 // シーンに追加
