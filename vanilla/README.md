@@ -79,7 +79,7 @@ document.querySelector('body').style.backgroundColor = 'red';
 
 
 
-### 時間差の処理
+### 時間の扱い
 
 ```
 
@@ -89,7 +89,24 @@ setTimeout(() => {
 }, 1000);
     
     
+// 繰り返し処理
+let num = 0;
+let count = () => {
+  num ++;
+  console.log(num);
+
+  if(num == 10){
+    // タイマーが取り消される。
+    clearInterval(timer);
+  }
+};
+
+
+// 1秒ごとにcount()が発動
+let timer = setInterval(count, 1000);
+    
 ```
+
 
 ## 配列
 
