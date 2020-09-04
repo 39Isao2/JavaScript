@@ -171,6 +171,7 @@ function tick() {
     const width = window.innerWidth;
     const height = window.innerHeight;
     renderer.setSize(width, height);
+    renderer.setPixelRatio(window.devicePixelRatio);
 
     // シーンの作成
     const scene = new THREE.Scene();
