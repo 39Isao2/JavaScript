@@ -35,8 +35,6 @@ window.addEventListener('load', () =>{
     alert('test');
 });
 </script>
-
-
 ```
 
 ## WebGLのレンダリングをするためのレンダラーを作成
@@ -46,11 +44,10 @@ const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#stage')
 });
 
-
 // サイズを指定
 const width = window.innerWidth;
 const height = window.innerHeight;
-renderer.setPixelRatio(window.devicePixelRatio);
+renderer.setPixelRatio(window.devicePixelRatio); //deviceの解像度に合わせる
 renderer.setSize(width, height);
 
 /* const(定数)とは？ 再度、値を変更できない変数 */
@@ -60,7 +57,6 @@ renderer.setSize(width, height);
 3D空間を描画する為の空間を作成
 ```
 const scene = new THREE.Scene();
-
 ```
 
 ## カメラの作成
@@ -69,11 +65,13 @@ const scene = new THREE.Scene();
 <img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/nogson.png" width="600px" alt="">
 
 ```
-// new THREE.PerspectiveCamera(視野角, アスペクト比, near, far)
+// カメラの作成
 const camera = new THREE.PerspectiveCamera(45, width / height, 1, 2000);
+camera.position.set(0, 1000, +1000);
+//camera.position.set(0, 0, +2000);
 
-// ポジション +が手前
-camera.position.set(0, 0, +1000);
+// 原点方向を見つめる
+camera.lookAt(0, 0, 0);
 
 
 /* アスペクト比 */
@@ -108,15 +106,16 @@ scene.add(light);
 今回は立方体や直方体のような箱状の形状を生成するためのBoxGeometryを使用します。
 ```
 
-// ジオメトリ new THREE.BoxGeometry(幅, 高さ, 奥行き)
+// 立方体の作成
+// ジオメトリ
 const geometry = new THREE.BoxGeometry(300, 300, 300);
 
-// マテリアル color: 0xから始まる16進数
-const material = new THREE.MeshLambertMaterial();
-// const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});  ワイヤーフレームver
-const box = new THREE.Mesh(geometry, material);
+// マテリアル  color: 0xから始まる16進数
+const material = new THREE.MeshLambertMaterial({color: 0x00FFFF}); //水色
+//const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
 
-// シーンに追加
+const box = new THREE.Mesh(geometry, material);
+box.position.set(0,0,0);
 scene.add(box);
 
 ```
@@ -178,7 +177,15 @@ function tick() {
 
     // カメラの作成
     const camera = new THREE.PerspectiveCamera(45, width / height, 1, 2000);
-    camera.position.set(0, 0, +1000);
+    camera.position.set(0, 1000, +1000);
+    //camera.position.set(0, 0, +2000);
+    // 原点方向を見つめる
+    camera.lookAt(0, 0, 0);
+    
+    // ヘルパー
+    let axis = new THREE.AxisHelper(1000);
+    axis.position.set(0,0,0);
+    scene.add(axis);
     
     // ライト
     const light = new THREE.DirectionalLight(
@@ -193,9 +200,10 @@ function tick() {
     const geometry = new THREE.BoxGeometry(300, 300, 300);
 
     // マテリアル  color: 0xから始まる16進数
-    const material = new THREE.MeshNormalMaterial();
-    // const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
+    const material = new THREE.MeshLambertMaterial({color: 0x00FFFF}); //水色
+    //const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
     const box = new THREE.Mesh(geometry, material);
+    box.position.set(0,0,0);
     scene.add(box);
 
 
