@@ -178,6 +178,7 @@ for (let i = 0; i < fruits.length; i++) {
 
 /* 使用例 */
 let fruits = ['イチゴ', 'メロン', 'リンゴ', 'バナナ'];
+
 let fragment = document.createDocumentFragment(); // 後で一気にいれる為の箱
 // for文でpタグ大量生成
 for(let i =0; i < fruits.length; i++){
