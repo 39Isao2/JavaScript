@@ -202,7 +202,7 @@ mainArea.appendChild(fragment);
 
 // 1秒後に実行
 setTimeout(() => {
-  document.querySelector('body').style.backgroundColor = 'red';
+  document.querySelector('body').classList.add('red');
 }, 1000);
     
     
