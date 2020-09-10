@@ -231,9 +231,6 @@ let timer = setInterval(count, 1000);
 例えると「自動販売」のようなもので、「コインを入れて、ボタンを押すと、何かが出てくる」ような仕組み<br>
 解説参考: https://kitsune.blog/function
 
-
-<br>
-<img src="http://hareumi.com/jskouza/sutaba.png" width="150px">
 <br>
 
     // カフェの設定でいきます。
@@ -246,9 +243,11 @@ let timer = setInterval(count, 1000);
     
     // 引数ありver
     let drink = 'カフェラテ';
+    
     let order = (drink) => {
         alert('おはようございます、'+  drink + 'を一杯どうぞ');
     }
+    
     order(drink);
     
     
@@ -257,13 +256,13 @@ let timer = setInterval(count, 1000);
     let drink = "コーヒー";
     
     let order = (drink) => {
-        let price = 290;
+        let price = 300;
         return price;
     }
     
     // コーヒーの値段
     let coffeePrice = getPrice(drink);
-    alert(coffeePrice); // 290
+    alert(coffeePrice); // 300
     
     
     
