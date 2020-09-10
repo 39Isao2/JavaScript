@@ -178,19 +178,19 @@ for (let i = 0; i < fruits.length; i++) {
 
 /* 使用例 */
 let fruits = ['イチゴ', 'メロン', 'リンゴ', 'バナナ'];
-let fragment = document.createDocumentFragment();
+let fragment = document.createDocumentFragment(); // 後で一気にいれる為の箱
 // for文でpタグ大量生成
 for(let i =0; i < fruits.length; i++){
     let liTag = document.createElement('p'); // pタグを作成
     let fruit = document.createTextNode(fruits[i]); 
     liTag.appendChild(fruit); //pタグにfruits[i]を挿入
-    fragment.appendChild(liTag); // fragment
+    fragment.appendChild(liTag);  
 }
 
 // mainタグを取得
 let mainArea = document.querySelector("main");
 
-// 最後に追加！
+// 最後に一気に追加！
 mainArea.appendChild(fragment);
 
 ```
