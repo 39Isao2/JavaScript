@@ -76,7 +76,7 @@ camera.lookAt(0, 0, 0);
 
 /* アスペクト比 */
 // 描画される出力領域の縦横比	
-window.innerWidth/widow.innerHeight
+window.innerWidth/window.innerHeight
 ```
 
 ## ライト
