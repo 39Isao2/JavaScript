@@ -34,8 +34,9 @@ TAX = 2.0; // エラー
 
 ```
 
-"use strict"; とは<br>
-strictモード(厳格モード)について<br>
+### "use strict"; とは<br>
+strictモード(厳格モード)と言って、変数宣言なしのグローバル変数化や、予約語の変数命名を防いだり、<br>
+with文などバグの元になりやすい命令を禁止する<br>
 参考: https://www.sejuku.net/blog/58342
 
 
