@@ -32,10 +32,11 @@ const TAX = 1.10;
 TAX = 2.0; // エラー
 
 
-```
 "use strict"; とは<br>
 strictモード(厳格モード)について<br>
 参考: https://www.sejuku.net/blog/58342
+```
+
 
 
 
