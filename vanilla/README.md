@@ -7,6 +7,7 @@
 jsの変数には、関数や配列など様々な型が入れられる。
 
 ```
+"use strict";
 
 // 変数の宣言
 let color;
@@ -32,6 +33,11 @@ TAX = 2.0; // エラー
 
 
 ```
+"use strict"; とは<br>
+strictモード(厳格モード)について<br>
+参考: https://www.sejuku.net/blog/58342
+
+
 
 ## イベントをバニラjsで
 jQueryのon()メソッドが、addEventListenerメソッド
