@@ -232,9 +232,9 @@ function tick() {
 マウスで自在で3D空間を移動できるOrbitControls.jsを使ってみましょう。
 ```
 <!-- OrbitControls.jsを読み込む -->
-<script src="js/OrbitControls.js"></script>
+<script src="OrbitControls.js"></script>
 
-// カメラの作成 あたりに追記
+// cameraの定義の後に追記
 const controls = new THREE.OrbitControls(camera);
 
 ```
