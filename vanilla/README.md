@@ -264,7 +264,7 @@ let timer = setInterval(count, 1000);
     // 返り値（return）
     let drink = "コーヒー";
     
-    let order = (drink) => {
+    let getPrice = (drink) => {
         let price = 300;
         return price;
     }
