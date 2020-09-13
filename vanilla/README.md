@@ -245,7 +245,7 @@ let timer = setInterval(count, 1000);
     // カフェの設定でいきます。
 
     let order = () => {
-        alert('おはようございます、コーヒーを一杯どうぞ');
+        alert('おはようございます、コーヒーを一杯お願いします');
     }
     order();
     
@@ -254,7 +254,7 @@ let timer = setInterval(count, 1000);
     let drink = 'カフェラテ';
     
     let order = (drink) => {
-        alert('おはようございます、'+  drink + 'を一杯どうぞ');
+        alert('おはようございます、'+  drink + 'を一杯お願いします');
     }
     
     order(drink);
