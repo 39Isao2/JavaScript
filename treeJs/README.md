@@ -67,8 +67,8 @@ const scene = new THREE.Scene();
 ```
 // カメラの作成
 const camera = new THREE.PerspectiveCamera(45, width / height, 1, 2000);
-camera.position.set(0, 1000, +1000);
-//camera.position.set(0, 0, +2000);
+//camera.position.set(0, 1000, +1000);
+camera.position.set(0, 0, +2000);
 
 // 原点方向を見つめる
 camera.lookAt(0, 0, 0);
