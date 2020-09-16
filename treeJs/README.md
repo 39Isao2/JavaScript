@@ -1,4 +1,4 @@
-# Tree.js超入門
+# Tree.js入門
 HTMLの3D技術「WebGL」を扱いやすくしたライブラリです。
 
 <img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/treejs.png" width="600px" alt="three.jsの画像">
