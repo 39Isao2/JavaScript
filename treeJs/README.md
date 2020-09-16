@@ -78,8 +78,10 @@ const scene = new THREE.Scene();
 // 描画される出力領域の縦横比	
 window.innerWidth/window.innerHeight
 
-const camera = new THREE.PerspectiveCamera(45, width / height, 1, 2000);
-camera.position.set(0, 0, +2000);
+const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 2000);
+
+// プラスが手前
+camera.position.set(0, 0, +1000);
 
 // 原点方向を見つめる
 camera.lookAt(0, 0, 0);
