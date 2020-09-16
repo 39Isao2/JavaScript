@@ -38,6 +38,11 @@ window.addEventListener('load', () =>{
 ```
 
 ## WebGLのレンダリングをするためのレンダラーを作成
+レンダリングとは、複数データを計算処理によって、一つの状態としてまとめる作業。<br>
+今回の場合は、3D空間を2Dとして表示する変換作業<br>
+参考:デザインにおける「レンダリング」とは？デザイナーが持つべき知識とおすすめの方法 <br>
+https://jp.renderpool.net/blog/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0#i
+<br><br>
 
 ```
 const renderer = new THREE.WebGLRenderer({
@@ -54,7 +59,6 @@ renderer.setSize(width, height);
 ```
 
 ## シーンの作成
-3D空間を描画する為の空間を作成
 ```
 const scene = new THREE.Scene();
 ```
