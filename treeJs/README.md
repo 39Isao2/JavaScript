@@ -286,7 +286,7 @@ IcosahedronGeometryを追加してみましょう。<br>
 const icoGeometry = new THREE.IcosahedronGeometry( 100, 1 );
 const icoMaterial = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
 const ico = new THREE.Mesh(icoGeometry, icoMaterial);
-ico.position.set(200,200,200);
+ico.position.set(300,300,300);
 scene.add(ico);
 
 ```
