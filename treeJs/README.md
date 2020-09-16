@@ -188,7 +188,7 @@ https://ics.media/tutorial-three/camera_orbitcontrols/
 
 
 
-お疲れ様でした！<br>
+お疲れ様でした！その１<br>
 現状の全コードはこちら。<br>
 
 ```
