@@ -290,8 +290,11 @@ ico.position.set(300,300,300);
 scene.add(ico);
 
 ```
-参考: IcosahedronGeometry(正２０面体)について
+参考: IcosahedronGeometry(正２０面体)について<br>
 http://gupuru.hatenablog.jp/entry/2013/12/06/204217
+
+## カメラのアニメーション
+注視点を特定のメッシュに設定し、カメラを自動でアニメーションしてみましょう。
 
 
 
