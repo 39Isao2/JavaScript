@@ -67,7 +67,7 @@ const scene = new THREE.Scene();
 ## カメラの作成
 3Dではどの視点から空間を撮影するか、というカメラの定義をします。<br>
 今回はTHREE.PerspectiveCameraで画角、アスペクト比、描画開始距離、描画終了距離の4つの情報を使って定義します。
-<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/nogson.png" width="600px" alt="">
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/threeJS.png" width="600px" alt="">
 
 ```
 // カメラの作成
