@@ -71,17 +71,19 @@ const scene = new THREE.Scene();
 
 ```
 // カメラの作成
+// THREE.PerspectiveCamera(fov, aspect, near, far); 
+// nearより手前は表示されない。farより奥は描画されない。
+
+/* アスペクト比 */
+// 描画される出力領域の縦横比	
+window.innerWidth/window.innerHeight
+
 const camera = new THREE.PerspectiveCamera(45, width / height, 1, 2000);
-//camera.position.set(0, 1000, +1000);
 camera.position.set(0, 0, +2000);
 
 // 原点方向を見つめる
 camera.lookAt(0, 0, 0);
 
-
-/* アスペクト比 */
-// 描画される出力領域の縦横比	
-window.innerWidth/window.innerHeight
 ```
 
 ## ライト
