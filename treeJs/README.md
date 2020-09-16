@@ -95,11 +95,11 @@ DirectionalLightという太陽光のような一定方向から差し込む光�
 
 ```
 
-// new THREE.DirectionalLight(色)
+// new THREE.DirectionalLight(色);
 const light = new THREE.DirectionalLight(0xffffff);
 
 // ライトの位置を変更
-light.position.set(1, 1, 1);
+light.position.set(100, 100, 100);
 
 // シーンに追加
 scene.add(light);
