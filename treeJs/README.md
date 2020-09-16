@@ -108,11 +108,24 @@ scene.add(light);
 
 # あと少し！
 
+
+## ヘルパーの表示
+x,y,z軸を確認する為のヘルパーをシーンに追加します。
+
+```
+// axisヘルパーの表示
+const axis = new THREE.AxisHelper(1000);
+axis.position.set(0,0,0);
+scene.add(axis);
+
+```
+
+
 ## 立方体を作る
 メッシュという表示用のオブジェクトを作成する。<br>
 メッシュを作るには、ジオメトリ（形状）とマテリアル（素材）の二種類を用意する必要があります。<br>
 ジオメトリとは頂点情報や面情報を持っています。Three.jsにはさまざまなジオメトリが用意されていますが、<br>
-今回は立方体や直方体のような箱状の形状を生成するためのBoxGeometryを使用します。
+まずは立方体や直方体のような箱状の形状を生成するためのBoxGeometryを使用します。
 ```
 
 // 立方体の作成
@@ -121,13 +134,17 @@ const geometry = new THREE.BoxGeometry(300, 300, 300);
 
 // マテリアル  color: 0xから始まる16進数
 const material = new THREE.MeshLambertMaterial({color: 0x00FFFF}); //水色
-//const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
 
-const box = new THREE.Mesh(geometry, material);
+const box = new THREE.Mesh(geometry, material); // ジオメトリとマテリアルを組み合わせてメッシュを作成
 box.position.set(0,0,0);
-scene.add(box);
+scene.add(box); // シーンに追加
 
 ```
+参考 : Three.jsのさまざまなマテリアル
+https://ics.media/tutorial-three/material_variation/
+
+
+
 
 ## アニメーションでシーンを表示し続ける
 requestAnimationFrame()というメソッドを使用して、<br>
@@ -153,8 +170,26 @@ function tick() {
 
 ```
 
+
+
+## OrbitControls.jsを使ってみる
+マウスで自在にカメラ移動できるOrbitControls.jsを使ってみましょう。
+```
+<!-- OrbitControls.jsを読み込む -->
+<script src="OrbitControls.js"></script>
+
+// cameraの定義の後に追記
+const controls = new THREE.OrbitControls(camera);
+
+```
+参考: Three.jsのOrbitControlsで手軽にカメラを制御する
+https://ics.media/tutorial-three/camera_orbitcontrols/
+
+
+
+
 お疲れ様でした！<br>
-全コードはこちら。<br>
+現状の全コードはこちら。<br>
 
 ```
 
@@ -166,6 +201,7 @@ function tick() {
 <body>
   <canvas id="stage"></canvas>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
+  <script src="OrbitControls.js"></script>
   <script>
   window.addEventListener('load', () =>{
     // レンダリング環境を作成
@@ -191,8 +227,11 @@ function tick() {
     // 原点方向を見つめる
     camera.lookAt(0, 0, 0);
     
-    // ヘルパー
-    let axis = new THREE.AxisHelper(1000);
+    // OrbitControlsの機能追加
+    const controls = new THREE.OrbitControls(camera);
+    
+    // axisヘルパーの表示
+    const axis = new THREE.AxisHelper(1000);
     axis.position.set(0,0,0);
     scene.add(axis);
     
@@ -237,18 +276,7 @@ function tick() {
 </html>
 ```
 
-## OrbitControls.jsを使ってみる
-マウスで自在で3D空間を移動できるOrbitControls.jsを使ってみましょう。
-```
-<!-- OrbitControls.jsを読み込む -->
-<script src="OrbitControls.js"></script>
 
-// cameraの定義の後に追記
-const controls = new THREE.OrbitControls(camera);
-
-```
-参考: Three.jsのOrbitControlsで手軽にカメラを制御する
-https://ics.media/tutorial-three/camera_orbitcontrols/
 
 
 ## 違うメッシュにしてみよう。
@@ -259,9 +287,6 @@ const geometry = new THREE.IcosahedronGeometry( 100, 1 );
 const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
 
 ```
-
-
-
 
 
 応用<br>
