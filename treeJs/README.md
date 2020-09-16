@@ -249,7 +249,6 @@ https://ics.media/tutorial-three/camera_orbitcontrols/
 
     // マテリアル  color: 0xから始まる16進数
     const material = new THREE.MeshLambertMaterial({color: 0x00FFFF}); //水色
-    //const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
     const box = new THREE.Mesh(geometry, material);
     box.position.set(0,0,0);
     scene.add(box);
@@ -287,7 +286,7 @@ IcosahedronGeometryを追加してみましょう。<br>
 const icoGeometry = new THREE.IcosahedronGeometry( 100, 1 );
 const icoMaterial = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
 const ico = new THREE.Mesh(icoGeometry, icoMaterial);
-ico.position.set(100,100,100);
+ico.position.set(200,200,200);
 scene.add(ico);
 
 ```
