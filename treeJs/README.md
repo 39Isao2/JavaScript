@@ -59,6 +59,7 @@ renderer.setSize(width, height);
 ```
 
 ## シーンの作成
+描画する内容。物体やライトなどをシーンに追加する。
 ```
 const scene = new THREE.Scene();
 ```
