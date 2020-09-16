@@ -255,10 +255,8 @@ https://ics.media/tutorial-three/camera_orbitcontrols/
 
 
     // アニメーションで表示し続ける
-    // 初回実行
-    tick();
 
-    function tick() {
+    let tick = () => {
     
       // tick()を繰り返し呼び出している
       requestAnimationFrame(tick);
@@ -270,6 +268,10 @@ https://ics.media/tutorial-three/camera_orbitcontrols/
       renderer.render(scene, camera);
 
     }
+    
+    // 初回実行
+    tick();
+    
   });
   </script>
 </body>
@@ -297,15 +299,189 @@ scene.add(ico);
 http://gupuru.hatenablog.jp/entry/2013/12/06/204217
 
 ## カメラのアニメーション
-注視点を特定のメッシュに設定し、カメラを自動でアニメーションしてみましょう。
+カメラを自動でアニメーションしてみましょう。
 
 ```
-// 原点にカメラを向けたまま移動
-camera.lookAt(0,0,0);
+let tick = () => {
 
-// x座標を移動してみる
-camera.position.x += 10;
+  requestAnimationFrame(tick);
+  
+  // 原点にカメラを向けたまま移動
+  camera.lookAt(0,0,0);
+  
+  // x座標を移動してみる(最終的に画面から消えてしまいます。)
+  camera.position.x += 10;
+
+  box.rotation.y += 0.01;
+
+  // レンダリング
+  renderer.render(scene, camera);
+
+      
+}
 ```
+
+
+## カメラの円運動アニメーション
+三角関数を使ってカメラのグルグル回るアニメーションを作ってみます。
+```
+
+// カメラを回す用の角度をグローバル変数で定義
+let rot = 0;
+    
+let tick = () => {
+
+  // tick()を繰り返し呼び出している
+  requestAnimationFrame(tick);
+
+  // アニメーション処理をここに書く
+  box.rotation.y += 0.01;
+  ico.rotation.y += 0.005;
+      
+
+  /* ここから追加*/
+  // 角度を増やす
+  rot++;
+
+  // 度数からラジアンに変換する(公式)
+  const radian = rot * Math.PI / 180;
+
+  // カメラの円運動(x軸とy軸を回すのがポイント！)
+  camera.position.x = 1000 * Math.sin(radian);
+  camera.position.z = 1000 * Math.cos(radian);
+
+  // 原点にカメラ方向を向ける
+  camera.lookAt(0,0,0);
+  
+  // 特定のメッシュにカメラ方向を向ける場合
+  //camera.lookAt(ico.position);
+  
+  
+  // レンダリング
+  renderer.render(scene, camera);
+
+}
+    
+
+```
+
+お疲れ様でした！！<br>
+全ソースコードその2<br>
+
+```
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+</head>
+<body>
+  <canvas id="stage"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
+  <script src="OrbitControls.js"></script>
+  <script>
+  window.addEventListener('load', () =>{
+    // レンダリング環境を作成
+    const renderer = new THREE.WebGLRenderer({
+      canvas: document.querySelector('#stage')
+    });
+
+
+
+    // サイズを指定
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    renderer.setSize(width, height);
+    renderer.setPixelRatio(window.devicePixelRatio);
+
+    // シーンの作成
+    const scene = new THREE.Scene();
+
+    // カメラの作成
+    const camera = new THREE.PerspectiveCamera(45, width / height, 1, 2000);
+    camera.position.set(0, 1000, +1000);
+    //camera.position.set(0, 0, +2000);
+    // 原点方向を見つめる
+    camera.lookAt(0, 0, 0);
+    
+    // OrbitControlsの機能追加
+    const controls = new THREE.OrbitControls(camera);
+    
+    // axisヘルパーの表示
+    const axis = new THREE.AxisHelper(1000);
+    axis.position.set(0,0,0);
+    scene.add(axis);
+    
+    // ライト
+    const light = new THREE.DirectionalLight(
+      0xffffff
+    );
+    light.position.set(1, 1, 1);
+    // シーンに追加
+    scene.add(light);
+
+    // 立方体の作成
+    // ジオメトリ
+    const geometry = new THREE.BoxGeometry(100, 100, 100);
+
+    // マテリアル  color: 0xから始まる16進数
+    const material = new THREE.MeshLambertMaterial({color: 0x00FFFF}); //水色
+    //const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
+    const box = new THREE.Mesh(geometry, material);
+    box.position.set(0,0,0);
+    scene.add(box);
+
+    const icoGeometry = new THREE.IcosahedronGeometry( 100, 1 );
+    //const icoGeometry = new THREE.SphereGeometry( 200, 7, 7 );
+    const icoMaterial = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
+    const ico = new THREE.Mesh(icoGeometry, icoMaterial);
+    ico.position.set(300,300,300);
+    scene.add(ico);
+
+    // カメラを回す用の角度
+    let rot = 0;
+
+    // アニメーションで表示し続ける
+    let tick = () => {
+        
+      // tick()を繰り返し呼び出している
+      requestAnimationFrame(tick);
+
+      // アニメーション処理をここに書く
+      box.rotation.y += 0.01;
+      ico.rotation.y += 0.005;
+
+
+      // 角度を増やす
+      rot++;
+
+      // ラジアンに変換する(公式)
+      const radian = rot * Math.PI / 180;
+
+      // 
+      camera.position.x = 1000 * Math.sin(radian);
+    　camera.position.z = 1000 * Math.cos(radian);
+
+      // 原点方向を見つめる
+      camera.lookAt(ico.position);
+
+      // レンダリング
+      renderer.render(scene, camera);
+
+    }
+
+    // 初回実行
+    tick();
+
+
+  });
+  </script>
+</body>
+</html>
+
+```
+
+
 
 
 
