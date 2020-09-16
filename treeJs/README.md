@@ -299,6 +299,13 @@ http://gupuru.hatenablog.jp/entry/2013/12/06/204217
 ## カメラのアニメーション
 注視点を特定のメッシュに設定し、カメラを自動でアニメーションしてみましょう。
 
+```
+// 特定のメッシュにカメラの方向を向ける
+camera.lookAt(ico.position);
+camera.position.x += 0.1;
+```
+
+
 
 
 応用<br>
