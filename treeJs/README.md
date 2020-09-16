@@ -260,13 +260,14 @@ https://ics.media/tutorial-three/camera_orbitcontrols/
     tick();
 
     function tick() {
+    
+      // tick()を繰り返し呼び出している
       requestAnimationFrame(tick);
 
       // アニメーション処理をここに書く
       box.rotation.y += 0.01;
-      // box.rotation.z += 0.01;
 
-      // レンダリングで表示
+      // レンダリング
       renderer.render(scene, camera);
 
     }
