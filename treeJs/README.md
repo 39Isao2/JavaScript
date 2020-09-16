@@ -80,7 +80,7 @@ window.innerWidth/window.innerHeight
 
 const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 2000);
 
-// プラスが手前
+// プラスがz軸手前
 camera.position.set(0, 0, +1000);
 
 // 原点方向を見つめる
