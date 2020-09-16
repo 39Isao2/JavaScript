@@ -282,6 +282,9 @@ https://ics.media/tutorial-three/camera_orbitcontrols/
 ## 違うメッシュを追加してみよう
 
 IcosahedronGeometryを追加してみましょう。<br>
+
+<img src="https://github.com/55Kaerukun/JavaScript/blob/master/images/ico.png" width="200px" alt="box"> <br>
+
 ```
 const icoGeometry = new THREE.IcosahedronGeometry( 100, 1 );
 const icoMaterial = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
