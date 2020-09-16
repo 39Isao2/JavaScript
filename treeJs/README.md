@@ -280,14 +280,20 @@ https://ics.media/tutorial-three/camera_orbitcontrols/
 
 
 
-## 違うメッシュにしてみよう。
-ワイヤースレームとIcosahedronGeometryにしてみる。<br>
+## 違うメッシュを追加してみよう
+
+IcosahedronGeometryを追加してみましょう。<br>
+```
+const icoGeometry = new THREE.IcosahedronGeometry( 100, 1 );
+const icoMaterial = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
+const ico = new THREE.Mesh(icoGeometry, icoMaterial);
+ico.position.set(100,100,100);
+scene.add(ico);
 
 ```
-const geometry = new THREE.IcosahedronGeometry( 100, 1 );
-const material = new THREE.MeshBasicMaterial({color: 0xa6b5d7, wireframe: true});
+参考: IcosahedronGeometry(正２０面体)について
+http://gupuru.hatenablog.jp/entry/2013/12/06/204217
 
-```
 
 
 応用<br>
