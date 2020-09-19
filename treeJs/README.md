@@ -490,3 +490,8 @@ let tick = () => {
 参考: Three.jsで大量のパーティクルを表示する方法<br>
 https://ics.media/tutorial-three/points/
 
+
+リサイズ対応<br>
+参考: Three.jsでの最適なリサイズ処理<br>
+https://ics.media/tutorial-three/renderer_resize/
+
