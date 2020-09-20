@@ -155,7 +155,7 @@ requestAnimationFrame()というメソッドを使用して、<br>
 // 初回実行
 tick();
 
-function tick() {
+let tick = () => {
   requestAnimationFrame(tick);
 
   // アニメーション処理をここに書く
